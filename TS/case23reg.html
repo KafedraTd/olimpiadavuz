@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решение задач</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../styles/tasking.css">
+</head>
+
+<body onload="getTransfering()">
+    <!-- onload="getTransfering()" -->
+    <form name="tasking" id="tasking" method="POST" autocomplete="off" action="https://sheetdb.io/api/v1/d74h4a1vd9319">
+        <div class="container">
+            <div class="mainField">
+                <div class="notes">
+                    <h1>Всероссийская олимпиада по таможенному делу</h1>
+                    <div class="subnotes">
+                        <input class="about" type="text" name="data[usrName]" id="usrName" />
+                        <input class="about" type="text" name="data[studEvent]" id="studEvent" />
+                        <input class="about" type="text" name="data[date]" id="date" />
+                    </div>
+                </div>
+                <div class="subField">
+                    <div class="item" id="tnved">
+                        <h2>Задача 1. ТН ВЭД ЕАЭС</h2>
+                        <div class="disposition">
+                            Игрушка-рюкзак в виде «мишка с рюкзаком», выполненная из плюша (хлопчатобумажная ткань с
+                            длинным ворсом из шелка), имеющая внутреннюю полость для хранения и переноски предметов,
+                            снабженная наплечными лямками, регулирующимися по длине, а также застежками «молния».
+                            <p>
+                            <div class="classification"><a
+                                    href="https://www.consultant.ru/cons/cgi/online.cgi?from=430794-72&req=doc&rnd=up32wA&base=LAW&n=438878#i6xvOYTYWJFKXCz01"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>ТНВЭД</a>
+                            </div>
+                            <div class="classification"><a
+                                    href="https://eec.eaeunion.org/comission/department/catr/psn/?ysclid=lf6e7cij86368579037"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>Пояснения
+                                    к ТНВЭД</a></div>
+                            <div class="classification"><a
+                                    href="https://www.alta.ru/tamdoc/21pr0995/?ysclid=lar36prd1h364617494"
+                                    target="_blank"><span
+                                        class="material-symbols-outlined">auto_stories</span>Разъяснения к ТНВЭД</a>
+                            </div>
+                            <div class="classification"><a
+                                    href="https://eec.eaeunion.org/comission/department/dep_tamoj_zak/klassifikatsiya-tovarov-v-sootvetstvii-s-tn-ved-eaes/resheniya-o-klassifikatsii-tovarov.php?ysclid=lar37qkjcs816823679"
+                                    target="_blank"><span
+                                        class="material-symbols-outlined">auto_stories</span>Класс.решения ЕЭК</a></div>
+                            </p>
+                        </div>
+
+                        <div class="picture exists" id="pic1"
+                            style="background-image: url(../images/tasking_23_reg1.PNG);">
+                        </div>
+                        <div class="task">
+                            <table>
+                                <tr>
+                                    <th style="width: 40%;">Задание</th>
+                                    <th style="width: 30%;">Комментарий</th>
+                                    <th style="width: 30%;">Ваш ответ</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="question">Задание 1.1) Определите 10-значный код товара, описанного
+                                            выше.</div>
+                                    </td>
+                                    <td>
+                                        <div class="note">Стоимость задания 3 балла.</div>
+                                    </td>
+                                    <td>
+                                        <div class="answer" id="ans1-1"><input type="text" class="center"
+                                                name="data[grafa1_1]" id="ansinp1-1" onfocusout="removeSpaces(this)"
+                                                maxlength="13"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="question">Задание 1.2) Какие ОПИ требуется применить для
+                                            однозначного определения
+                                            10-значного кода данного товара?</div>
+                                    </td>
+                                    <td>
+                                        <div class="note">Стоимость задания 2 балла. За лишний ОПИ минус балл</div>
+                                    </td>
+                                    <td>
+                                        <div class="answer" id="ans1-2">
+                                            <label class="lbl">ОПИ1
+                                                <input type="checkbox" value="ОПИ1" name="data[grafa1_2]">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <label class="lbl">ОПИ2а
+                                                <input type="checkbox" value="ОПИ2а" name="data[grafa1_3]">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <label class="lbl">ОПИ2б
+                                                <input type="checkbox" value="ОПИ2б" name="data[grafa2-1]">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <label class="lbl">ОПИ3а
+                                                <input type="checkbox" value="ОПИ3а" name="data[grafa2-2]">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <label class="lbl">ОПИ3б
+                                                <input type="checkbox" value="ОПИ3б" name="data[grafa2-3]">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <label class="lbl">ОПИ3в
+                                                <input type="checkbox" value="ОПИ3в" name="data[grafa2-4]">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <label class="lbl">ОПИ4
+                                                <input type="checkbox" value="ОПИ4" name="data[grafa2-5]">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <label class="lbl">ОПИ5а
+                                                <input type="checkbox" value="ОПИ5а" name="data[grafa2-6]">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <label class="lbl">ОПИ5б
+                                                <input type="checkbox" value="ОПИ5б" name="data[grafa2-7]">
+                                                <span class="checkmark"></span>
+                                            </label>
+
+                                            <label class="lbl">ОПИ6
+                                                <input type="checkbox" value="ОПИ6" name="data[grafa2-8]">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="item" id="lawviolence">
+                        <h2>Задача 2. Правовая ответственность</h2>
+                        <div class="disposition">
+                            Домодедовские таможенники остановили в «зеленом коридоре» 16-летнего гражданина Египта,
+                            прибывшего из Египта. В ходе таможенного контроля таможенники обнаружили в его
+                            сопровождаемом багаже товары, подлежащие декларированию, запрятанные рядом с мясными
+                            изделиями. Количество незадекларированного товара измеряется в 60 тысяч долларов США.
+                            <p>
+                            <div class="classification"><a
+                                    href="https://www.consultant.ru/cons/cgi/online.cgi?from=415670-0&req=doc&rnd=tkqXYQ&base=LAW&n=438376#I3iNMYT8SLj9IZCb1"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>ДОГОВОР О
+                                    ЕАЭС</a></div>
+                            <div class="classification"><a
+                                    href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&base=LAW&n=380602&dst=0&edition=etD&rnd=7Sd3A#GBo2dNThjVhXLJfA"
+                                    target="_blank"><span
+                                        class="material-symbols-outlined">auto_stories</span>ТКЕАЭС</a></div>
+                            <div class="classification"><a
+                                    href="https://www.consultant.ru/cons/cgi/online.cgi?from=422320-0&req=doc&rnd=tkqXYQ&base=LAW&n=433452#pYpNMYTfsOmeuTTT"
+                                    target="_blank"><span
+                                        class="material-symbols-outlined">auto_stories</span>289-ФЗ</a></div>
+                            <div class="classification"><a
+                                    href="https://www.consultant.ru/cons/cgi/online.cgi?from=427418-0&req=doc&rnd=tkqXYQ&base=LAW&n=436387#tOvNMYTc7JtmGGdB2"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>63-ФЗ</a>
+                            </div>
+                            <div class="classification"><a
+                                    href="https://www.consultant.ru/cons/cgi/online.cgi?from=430599-0&req=doc&rnd=tkqXYQ&base=LAW&n=440713#bZ1OMYTIdfIajIkG1"
+                                    target="_blank"><span
+                                        class="material-symbols-outlined">auto_stories</span>195-ФЗ</a></div>
+                            <div class="classification"><a
+                                    href="https://www.alta.ru/tamdoc/17sr0107/?ysclid=lawpqpxkqc836918009"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>Решение
+                                    ЕЭК 107</a></div>
+                            </p>
+                        </div>
+                        <div class="picture exists" id="pic2"
+                            style="background-image: url(../images/tasking_23_reg2.jpg);"></div>
+                        <div class="task">
+                            <table>
+                                <tr>
+                                    <th style="width: 40%;">Задание</th>
+                                    <th style="width: 30%;">Комментарий</th>
+                                    <th style="width: 30%;">Ваш ответ</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="question">Задание 2.1) Определите по снимку (обведено) категорию
+                                            товара, незаконно перемещенного гражданином Египта и на основе этого
+                                            определите статью УК РФ, предусматривающую ответственность за такое деяние.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="note">Стоимость задания 3 балла. Укажите только номер статьи.</div>
+                                    </td>
+                                    <td>
+                                        <div class="answer" id="ans2-1">
+                                            <input type="text" name="data[grafa2-9]" class="center" id="ansinp2-1-1"
+                                                placeholder="Укажите № статьи" onfocusout="removeText(this)">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="question">Задание 2.2) Какая норма ТК ЕАЭС нарушена гражданином
+                                            Египта?
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="note">Стоимость задания 2 балла. Укажите только номер статьи.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="answer" id="ans2-2">
+                                            <input type="text" name='data[grafa2-10]' class="center" id="ansinp2-2-1"
+                                                placeholder="Укажите № статьи" onfocusout="removeText(this)">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="question">
+                                            Задание 2.3) Подлежит ли гражданин Египта уголовной ответственности и
+                                            почему?
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="note">Стоимость задания 1 балл.</div>
+                                    </td>
+                                    <td>
+                                        <div class="answer" id="ans2-3">
+                                            <select name="data[grafa2-11]" id="ansinp2-3-1">
+                                                <option>Выберите вариант</option>
+                                                <option>Да, ему уже 16</option>
+                                                <option>Нет, ему нет 18</option>
+                                                <option>Нет, он иностранец</option>
+                                                <option>Да, он старше 14</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="item" id="procedures">
+                        <h2>Задача 3. Таможенные операции</h2>
+                        <div class="disposition">
+                            10.03.2023 года по результатам таможенного контроля багажа гражданина Грузии, прибывшего с
+                            территории Азербайджана на территорию России на рейсовом автобусе, были выявлены следующие
+                            товары:
+                            <ul>
+                                <li>алкогольные напитки крепостью 12,5% в 4 стеклянных емкостях по 0,75л и общей
+                                    стоимостью 1,5 млн российских рублей</li>
+                                <li>элитные кубинские сигары в количестве 60шт и общей стоимостью 320 000 российских
+                                    рублей</li>
+                                <li>две стеклянные емкости икры осетровых видов рыб в заводской упаковке по 57 г общей стоимостью 8600 российских рублей</li>
+                                <li>гранаты свежие без упаковки в количестве 2 кг общей стоимостью 600 российских рублей
+                                </li>
+                                <li>два планшета iPad без упаковки, с признаками износа, общим весом 1,8 кг и общей
+                                    рыночной стоимостью 200 тыс. российских рублей</li>
+                                <li>наличные денежные средства в количестве 15 000 российских рублей и 12000 долларов
+                                    США</li>
+                                <li>предметы и принадлежности к одежде (необходимые для длительного временного пребывания гражданина на территории России) в количестве 80 единиц и различного наименования, с признаками износа, без упаковок и этикеток, общим весом 35 кг и общей рыночной стоимостью 90 тыс. российских рублей.</li>
+                            </ul>
+                            Все товары были в полном объеме заявлены в пассажирской таможенной декларации их владельцем – 20-летним гражданином Грузии как товары личного пользования. Кроме того, были представлены необходимые документы и иные доказательства стоимости и назначения товаров.
+                            <p>
+                            <div class="classification"><a
+                                    href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&base=LAW&n=380602&dst=0&edition=etD&rnd=7Sd3A#GBo2dNThjVhXLJfA"
+                                    target="_blank"><span
+                                        class="material-symbols-outlined">auto_stories</span>ТКЕАЭС</a></div>
+                            <div class="classification"><a
+                                    href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&base=LAW&n=422320&dst=0&edition=etD&rnd=7Sd3A#Gmk1dNTsr53eVkoS1"
+                                    target="_blank"><span
+                                        class="material-symbols-outlined">auto_stories</span>289-ФЗ</a>
+                            </div>
+                            <div class="classification"><a
+                                    href="https://www.alta.ru/tamdoc/17sr0107/?ysclid=lawpqpxkqc836918009"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>Решение
+                                    ЕЭК 107</a>
+                            </div>
+                            <div class="classification"><a
+                                    href="https://fsvps.gov.ru/ru"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>Россельхознадзор</a>
+                            </div>
+                            </p>
+                        </div>
+                        <div class="picture" id="pic3"></div>
+                        <div class="task">
+                            <table>
+                                <tr>
+                                    <th style="width: 40%;">Задание</th>
+                                    <th style="width: 30%;">Комментарий</th>
+                                    <th style="width: 30%;">Ваш ответ</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="question">
+                                            Задание 3.1) В отношении каких товаров личного пользования подлежат уплате таможенные пошлины, налоги?
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="note">
+                                            Стоимость задания 3 балла.
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="answer" id="ans3-1">
+                                            <select name="data[grafa2-12]">
+                                                <option>Выберите вариант</option>
+                                                <option>весь алкоголь</option>
+                                                <option>сигары 50шт</option>
+                                                <option>сигары 10шт</option>
+                                                <option>сигары 60шт</option>
+                                                <option>емкость икры 1шт</option>
+                                                <option>емкости икры 2шт</option>
+                                                <option>гранаты 1кг</option>
+                                                <option>гранаты 2кг</option>
+                                                <option>планшет 1шт</option>
+                                                <option>планшеты 2шт</option>
+                                                <option>все наличные деньги</option>
+                                                <option>одежда и принадлежности</option>
+                                                <option>все товары</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="question">
+                                            Задание 3.2) В отношении каких товаров таможенный орган не может принять решение о выпуске по причине несоблюдения запретов и ограничений?
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="note">Стоимость задания 2 балла.</div>
+                                    </td>
+                                    <td>
+                                        <div class="answer" id="ans3-2">
+                                            <select name="data[check2kt]">
+                                                <option>Выберите вариант</option>
+                                                <option>весь алкоголь</option>
+                                                <option>сигары 50шт</option>
+                                                <option>сигары 10шт</option>
+                                                <option>сигары 60шт</option>
+                                                <option>емкость икры 1шт</option>
+                                                <option>емкости икры 2шт</option>
+                                                <option>гранаты 1кг</option>
+                                                <option>гранаты 2кг</option>
+                                                <option>планшет 1шт</option>
+                                                <option>планшеты 2шт</option>
+                                                <option>все наличные деньги</option>
+                                                <option>одежда и принадлежности</option>
+                                                <option>все товары</option>
+                                            </select>
+                                        </div>
+                                        <!-- <div>
+                                            <input type="text" name="data[grafa3-1]" class="center" id="ansinp3-2-1"
+                                                placeholder="Укажите № статьи" onfocusout="removeText(this)">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="data[grafa18-2]" class="center" id="ansinp3-2-2"
+                                                placeholder="Укажите № пункта" onfocusout="removeText(this)">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="data[grafa19]" class="center" id="ansinp3-2-3"
+                                                placeholder="Укажите № подпункта" onfocusout="removeText(this)">
+
+                                        </div> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="question">
+                                            Задание 3.3) В отношении каких товаров таможенный орган не может принять решение о выпуске по иным причинам?
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="note">Стоимость задания 1 балл.</div>
+                                    </td>
+                                    <td>
+                                        <div class="answer" id="ans3-3">
+                                            <select name="data[grafa3-1]">
+                                                <option>Выберите вариант</option>
+                                                <option>весь алкоголь</option>
+                                                <option>сигары 50шт</option>
+                                                <option>сигары 10шт</option>
+                                                <option>сигары 60шт</option>
+                                                <option>емкость икры 1шт</option>
+                                                <option>емкости икры 2шт</option>
+                                                <option>гранаты 1кг</option>
+                                                <option>гранаты 2кг</option>
+                                                <option>планшет 1шт</option>
+                                                <option>планшеты 2шт</option>
+                                                <option>все наличные деньги</option>
+                                                <option>одежда и принадлежности</option>
+                                                <option>все товары</option>
+                                            </select>
+                                        </div>
+                                        <!-- <div>
+                                            <input type="text" name="data[grafa3-1]" class="center" id="ansinp3-2-1"
+                                                placeholder="Укажите № статьи" onfocusout="removeText(this)">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="data[grafa18-2]" class="center" id="ansinp3-2-2"
+                                                placeholder="Укажите № пункта" onfocusout="removeText(this)">
+                                        </div>
+                                        <div>
+                                            <input type="text" name="data[grafa19]" class="center" id="ansinp3-2-3"
+                                                placeholder="Укажите № подпункта" onfocusout="removeText(this)">
+
+                                        </div> -->
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!---------------------------------- Задача по платежам: начало --------------------------------->
+                    <div class="payments">
+                        <h2>Задача 4. Таможенные платежи</h2>
+                        <div class="disposition">
+                            Декларируется ввозимый на территорию Российской Федерации по договору купли-продажи товар: бананы сушеные, код товара по ТН ВЭД ЕАЭС – 0803 90 900 0. Общее количество товара в партии – 4300 кг, таможенная стоимость товара – 456000 руб. Товар помещается под таможенную процедуру выпуска для внутреннего потребления. Страна происхождения товара – Филиппины (сертификат происхождения товара имеется). Дата регистрации таможенным органом декларации на товары 10.03.2023.
+                            <p>
+                            <div class="classification"><a
+                                    href="https://www.consultant.ru/cons/cgi/online.cgi?from=428010-72&req=doc&rnd=uDhapw&base=LAW&n=438878#DOrAPYTagR8EZPmJ"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>ТНВЭД</a>
+                            </div>
+                            <div class="classification"><a
+                                    href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&rnd=uDhapw&base=LAW&n=380602&cacheid=CA32280B21507C6563222E6209761B5F&mode=rubr#3bzAPYTwU9neeEnH1"
+                                    target="_blank"><span
+                                        class="material-symbols-outlined">auto_stories</span>ТКЕАЭС</a></div>
+                            <div class="classification"><a
+                                    href="https://www.consultant.ru/cons/cgi/online.cgi?from=422320-0&req=doc&rnd=uDhapw&base=LAW&n=433452#tH5BPYToTPSlhIfD"
+                                    target="_blank"><span
+                                        class="material-symbols-outlined">auto_stories</span>289-ФЗ</a></div>
+                            <div class="classification"><a
+                                    href="http://www.consultant.ru/cons/cgi/online.cgi?from=426382-0&req=doc&rnd=uDhapw&base=LAW&n=433259#lH9BPYTvfuIl4Eb7"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>ППРФ
+                                    2068</a></div>
+                            <div class="classification"><a
+                                    href="http://www.consultant.ru/cons/cgi/online.cgi?from=420341-0&req=doc&rnd=uDhapw&base=LAW&n=434724#jICBPYTWElS5l1B81"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>ЗАКОН
+                                    5003-1</a></div>
+                            <div class="classification"><a
+                                    href="http://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=n977dNTqxTxMVlHr&cacheid=3921FD279F76CF274514CBD78655ED4A&mode=splus&rnd=KB47dNTku59Jtuv81&base=LAW&n=416219#6458dNT3sbQhdCKc"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>ППРФ
+                                    342</a></div>
+                            <div class="classification"><a
+                                    href="http://www.consultant.ru/cons/cgi/online.cgi?from=430627-0&req=doc&rnd=uDhapw&base=LAW&n=438470#iZHBPYTyY627pSOo"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>НКРФ</a>
+                            </div>
+                            <div class="classification"><a
+                                    href="http://www.consultant.ru/cons/cgi/online.cgi?from=413254-0&req=doc&rnd=uDhapw&base=LAW&n=436400#47LBPYTC4lMjxQNv2"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>РЕШЕНИЕ
+                                    КТС 257</a></div>
+                            </p>
+                        </div>
+                        <div class="picture" id="pic4"></div>
+                        <div class="task">
+                            <table>
+                                <tr>
+                                    <td style="width: 40%;">
+                                        <div class="question">
+                                            Задание 4.1) рассчитайте общую сумму таможенных платежей, которые
+                                            подлежат уплате при помещении товара под таможенную процедуру выпуска для
+                                            внутреннего
+                                            потребления.
+                                        </div>
+                                    </td>
+                                    <td style="width: 30%;">
+                                        <div class="note">Стоимость задания 1 балл.</div>
+                                    </td>
+                                    <td style="width: 30%;">
+                                        <div class="answer" id="ans4-1">
+                                            <input type="number" name="data[grafa20-2]" id="ansinp4-1"
+                                                onfocusout="rounding(this, 2)">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="question">
+                                Задание 4.2) Заполните графу 47 декларации на товары при помещении товара под таможенную
+                                процедуру выпуска для внутреннего потребления.
+                            </div>
+                            <div class="note">
+                                Стоимость задания 7 баллов. Каждое поле 0,35 балла.
+                            </div>
+                            <table id="gr47">
+                                <tr>
+                                    <td colspan="2">47 Исчисление платежей</td>
+                                    <td colspan="3"></td>
+                                </tr>
+                                <tr>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" tabindex="128"
+                                                name="data[grafa9-7]" id="grafa47t1-1-1" placeholder="Вид"
+                                                list="dutyCode" />
+                                    </td>
+                                    <td>
+                                        <div class="number"> <input type="number" class="grafa47t1" tabindex="128"
+                                                name="data[grafa9-8]" id="grafa47t1-1-2" placeholder="Основа начисления"
+                                                onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td>
+                                        <div class="rightquestion"> <input type="text" class="grafa47t1" tabindex="130"
+                                                name="data[grafa9-9]" id="grafa47t1-1-3" placeholder="Ставка"
+                                                onfocusout="removeSpaces(this)" />
+                                    </td>
+                                    <td>
+                                        <div class="number"> <input type="number" class="grafa47t1" tabindex="131"
+                                                name="data[grafa9-10]" id="grafa47t1-1-4" placeholder="Сумма"
+                                                onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td class="paymeth">
+                                        <div class="rightquestion"> <input type="text" tabindex="132"
+                                                name="data[grafa9-11]" id="grafa47t1-1-5" placeholder="СП"
+                                                list="paymentCode" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" tabindex="133"
+                                                name="data[grafa9-12]" id="grafa47t1-2-1" placeholder="Вид"
+                                                list="dutyCode" />
+                                    </td>
+                                    <td>
+                                        <div class="number"> <input type="number" class="grafa47t1" tabindex="134"
+                                                name="data[grafa11]" id="grafa47t1-2-2" placeholder="Основа начисления"
+                                                onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td>
+                                        <div class="rightquestion"> <input type="text" class="grafa47t1" tabindex="135"
+                                                name="data[grafa12]" id="grafa47t1-2-3" placeholder="Ставка"
+                                                onfocusout="removeSpaces(this)" />
+                                    </td>
+                                    <td>
+                                        <div class="number"> <input type="number" class="grafa47t1" tabindex="136"
+                                                name="data[grafa14-1]" id="grafa47t1-2-4" placeholder="Сумма"
+                                                onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td class="paymeth">
+                                        <div class="rightquestion"> <input type="text" tabindex="137"
+                                                name="data[grafa14-2]" id="grafa47t1-2-5" placeholder="СП"
+                                                list="paymentCode" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" tabindex="138"
+                                                name="data[grafa14-3]" id="grafa47t1-3-1" placeholder="Вид"
+                                                list="dutyCode" />
+                                    </td>
+                                    <td>
+                                        <div class="number"> <input type="number" class="grafa47t1" tabindex="139"
+                                                name="data[grafa14-4]" id="grafa47t1-3-2"
+                                                placeholder="Основа начисления" onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td>
+                                        <div class="rightquestion"> <input type="text" class="grafa47t1" tabindex="140"
+                                                name="data[grafa14-5]" id="grafa47t1-3-3" placeholder="Ставка"
+                                                onfocusout="removeSpaces(this)" />
+                                    </td>
+                                    <td>
+                                        <div class="number"> <input type="number" class="grafa47t1" tabindex="141"
+                                                name="data[grafa14-6]" id="grafa47t1-3-4" placeholder="Сумма"
+                                                onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td class="paymeth">
+                                        <div class="rightquestion"> <input type="text" tabindex="142"
+                                                name="data[grafa14-7]" id="grafa47t1-3-5" placeholder="СП"
+                                                list="paymentCode" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" tabindex="143"
+                                                name="data[grafa14-8]" id="grafa47t1-4-1" placeholder="Вид"
+                                                list="dutyCode" />
+                                    </td>
+                                    <td>
+                                        <div class="number"> <input type="number" class="grafa47t1" tabindex="144"
+                                                name="data[grafa14-9]" id="grafa47t1-4-2"
+                                                placeholder="Основа начисления" onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td>
+                                        <div class="rightquestion"> <input type="text" class="grafa47t1" tabindex="145"
+                                                name="data[grafa14-10]" id="grafa47t1-4-3" placeholder="Ставка"
+                                                onfocusout="removeSpaces(this)" />
+                                    </td>
+                                    <td>
+                                        <div class="number"> <input type="number" class="grafa47t1" tabindex="146"
+                                                name="data[grafa14-11]" id="grafa47t1-4-4" placeholder="Сумма"
+                                                onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td class="paymeth">
+                                        <div class="rightquestion"> <input type="text" tabindex="147"
+                                                name="data[grafa14-12]" id="grafa47t1-4-5" placeholder="СП"
+                                                list="paymentCode" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" tabindex="148"
+                                                name="data[grafa15-1]" id="grafa47t1-5-1" placeholder="Вид"
+                                                list="dutyCode" />
+                                    </td>
+                                    <td>
+                                        <div class="number"> <input type="number" class="grafa47t1" tabindex="149"
+                                                name="data[grafa15-2]" id="grafa47t1-5-2"
+                                                placeholder="Основа начисления" onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td>
+                                        <div class="rightquestion"> <input type="text" class="grafa47t1" tabindex="150"
+                                                name="data[grafa16]" id="grafa47t1-5-3" placeholder="Ставка"
+                                                onfocusout="removeSpaces(this)" />
+                                    </td>
+                                    <td>
+                                        <div class="number"> <input type="number" class="grafa47t1" tabindex="151"
+                                                name="data[grafa17-1]" id="grafa47t1-5-4" placeholder="Сумма"
+                                                onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td class="paymeth">
+                                        <div class="rightquestion"> <input type="text" tabindex="152"
+                                                name="data[grafa17-2]" id="grafa47t1-5-5" placeholder="СП"
+                                                list="paymentCode" />
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- <div class="question">Задание 4.2) Расчитайте таможенные платежи и заполните графу "В" ДТ</div>
+                    <div class="note">
+                        Стоимость задания 1 балл.
+                    </div> -->
+                            <table style="display: none;">
+                                <tr>
+                                    <td colspan="7">B Подробности подсчета</td>
+                                </tr>
+                                <tr>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" name="data[grafa3-2]"
+                                                list="dutyCode" />
+                                    </td>
+                                    <td>-</td>
+                                    <td>
+                                        <div class="number"> <input type="number" name="data[grafa4]"
+                                                onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td>-</td>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" name="data[grafa5]"
+                                                list="currencyCode" />
+                                    </td>
+                                    <td>-</td>
+                                    <td>
+                                        <div class="leftQuestion"> <input type="text" name="data[grafa6]"
+                                                onfocusout="removeSpaces(this)" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" name="data[grafa7]"
+                                                list="dutyCode" />
+                                    </td>
+                                    <td>-</td>
+                                    <td>
+                                        <div class="number"> <input type="number" name="data[grafa8-1]"
+                                                onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td>-</td>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" name="data[grafa8-2]"
+                                                list="currencyCode" />
+                                    </td>
+                                    <td>-</td>
+                                    <td>
+                                        <div class="leftQuestion"> <input type="text" name="data[grafa8-3]"
+                                                onfocusout="removeSpaces(this)" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" name="data[grafa8-4]"
+                                                list="dutyCode" />
+                                    </td>
+                                    <td>-</td>
+                                    <td>
+                                        <div class="number"> <input type="number" name="data[grafa8-5]"
+                                                onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td>-</td>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" name="data[grafa8-6]"
+                                                list="currencyCode" />
+                                    </td>
+                                    <td>-</td>
+                                    <td>
+                                        <div class="leftQuestion"> <input type="text" name="data[grafa8-7]"
+                                                onfocusout="removeSpaces(this)" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" name="data[grafa8-8]"
+                                                list="dutyCode" />
+                                    </td>
+                                    <td>-</td>
+                                    <td>
+                                        <div class="number"> <input type="number" name="data[grafa8-9]"
+                                                onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td>-</td>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" name="data[grafa8-10]"
+                                                list="currencyCode" />
+                                    </td>
+                                    <td>-</td>
+                                    <td>
+                                        <div class="leftQuestion"> <input type="text" name="data[grafa8-11]"
+                                                onfocusout="removeSpaces(this)" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" name="data[grafa8-12]"
+                                                list="dutyCode" />
+                                    </td>
+                                    <td>-</td>
+                                    <td>
+                                        <div class="number"> <input type="number" name="data[check8kt]"
+                                                onfocusout="rounding(this, 2)" />
+                                    </td>
+                                    <td>-</td>
+                                    <td class="paykind">
+                                        <div class="rightquestion"> <input type="text" name="data[grafa9-1]"
+                                                list="currencyCode" />
+                                    </td>
+                                    <td>-</td>
+                                    <td>
+                                        <div class="leftQuestion"> <input type="text" name="data[grafa9-2]"
+                                                onfocusout="removeSpaces(this)" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!---------------------------------- Задача по платежам: конец --------------------------------->
+                    <!--------------------------- Задача по таможенной стоимости: начало --------------------------->
+                    <div class="customsvalue">
+                        <h2>Задача 5. Таможенная стоимость</h2>
+                        <div class="disposition">
+                            <p>
+                                Между российской фирмой «А» (покупатель) и турецкой фирмой «В» (продавец) заключен контракт купли-продажи на поставку в Российскую Федерацию ткацких станков в количестве 10 шт. на сумму 150000 евро. Контракт заключен на условиях FCA – Измир. Контрактная стоимость включает стоимость сборки и наладки оборудования (10000 евро), осуществляемой турецкими специалистами на территории Российской Федерации.
+                            </p>
+                            <p>
+                                Стоимость перевозки из Измира в Ставрополь составляет 5800 евро; в счете на оплату перевозки указаны раздельно расходы до места прибытия на таможенную территорию ЕАЭС – 4500 евро и после прибытия – 1300 евро.
+                            </p>
+                            <p>
+                                Перевозка застрахована на сумму 172500 евро, страховая премия составила 345 евро.
+                            </p>
+                            <p>
+                                Дата регистрации таможенным органом декларации на товары 10.03.2023.
+                            </p>
+
+                            <p>
+                            <div class="classification"><a
+                                    href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&base=LAW&n=380602&dst=0&edition=etD&rnd=7Sd3A#GBo2dNThjVhXLJfA"
+                                    target="_blank"><span
+                                        class="material-symbols-outlined">auto_stories</span>ТКЕАЭС</a></div>
+                            <div class="classification"><a
+                                    href="https://www.consultant.ru/cons/cgi/online.cgi?from=422320-0&req=doc&rnd=uDhapw&base=LAW&n=433452#OSuDPYTc0lv4M1X"
+                                    target="_blank"><span
+                                        class="material-symbols-outlined">auto_stories</span>289-ФЗ</a></div>
+                            <div class="classification"><a
+                                    href="http://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=TWdBdNTaGXWmEau4&cacheid=7B4233182C12F4361708E1F73DC386D3&mode=splus&rnd=7Sd3A&base=LAW&n=332056#52eBdNTe79svDdO41"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>РЕШЕНИЕ
+                                    ЕЭК 160</a></div>
+                            <div class="classification"><a
+                                    href="http://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=jjwCdNT4Xf7FcWsv&cacheid=1A6CF5F91AA0E0AF1C2D7B5E789E3315&mode=splus&rnd=7Sd3A&base=LAW&n=113099&dst=1000000001#tXxCdNTi5ijRcWLK"
+                                    target="_blank"><span class="material-symbols-outlined">auto_stories</span>ПРИКАЗ
+                                    ФТС РФ 152</a></div>
+                            </p>
+
+                        </div>
+
+                        <div class="picture exists" id="pic5" style="background-image: url(../images/tasking_23_reg5.PNG);"></div>
+                        <div class="task">
+                            <table>
+                                <tr>
+                                    <th style="width: 40%;">Задание</th>
+                                    <th style="width: 30%;">Комментарий</th>
+                                    <th style="width: 30%;">Ваш ответ</th>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="question">Задание 5.1) Определите основу для расчета таможенной
+                                            стоимости товаров (графа 12 ДТС-1).</div>
+                                    </td>
+                                    <td>
+                                        <div class="note">Стоимость задания 1 балл.</div>
+                                    </td>
+                                    <td>
+                                        <div class="answer" id="ans5-1"><input type="number" name="data[grafa9-3]"
+                                                id="ansinp5-1" onfocusout="rounding(this, 2)"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="question">Задание 5.2) Определите размер дополнительных начислений
+                                            (при наличии) (графа 20 ДТС-1).</div>
+                                    </td>
+                                    <td>
+                                        <div class="note">Стоимость задания 1 балл.</div>
+                                    </td>
+                                    <td>
+                                        <div class="answer" id="ans5-2"><input type="number" name="data[grafa9-4]"
+                                                id="ansinp5-2" onfocusout="rounding(this, 2)"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="question">Задание 5.3) Определите размер вычетов (при наличии)
+                                            (графа 24 ДТС-1).</div>
+                                    </td>
+                                    <td>
+                                        <div class="note">Стоимость задания 1 балл.</div>
+                                    </td>
+                                    <td>
+                                        <div class="answer" id="ans5-3"><input type="number" name="data[grafa9-5]"
+                                                id="ansinp5-3" onfocusout="rounding(this, 2)"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="question">Задание 5.4) Определите таможенную стоимость ввозимых
+                                            товаров (графа 25а ДТС-1).</div>
+                                    </td>
+                                    <td>
+                                        <div class="note">Стоимость задания 2 балла.</div>
+                                    </td>
+                                    <td>
+                                        <div class="answer" id="ans5-4"><input type="number" name="data[grafa9-6]"
+                                                id="ansinp5-4" onfocusout="rounding(this, 2)"></div>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <button type="button" class="btn" id="btn">Завершить и отправить</button>
+        </div>
+    </form>
+    <div class="loader loader--hidden"></div>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <datalist id="dutyCode">
+        <option value=1010>Таможенные сборы за совершение таможенных операций (за таможенное оформление товаров, за
+            таможенное декларирование товаров, за таможенные операции)</option>
+        <option value=1020>Таможенные сборы за таможенное сопровождение</option>
+        <option value=2010>Ввозная таможенная пошлина (иные пошлины, налоги и сборы, имеющие эквивалентное действие),
+            обязанность по уплате которой возникла с 1 сентября 2010 г.</option>
+        <option value=2020>Ввозная таможенная пошлина, обязанность по уплате которой возникла до 1 сентября 2010 г.
+        </option>
+        <option value=2040>Специальная пошлина, установленная в соответствии с Протоколом о применении специальных
+            защитных, антидемпинговых и компенсационных мер по отношению к третьим странам (приложение N 8 к Договору о
+            Евразийском экономическом союзе от 29 мая 2014 года)</option>
+        <option value=2050>Антидемпинговая пошлина, установленная в соответствии с Протоколом о применении специальных
+            защитных, антидемпинговых и компенсационных мер по отношению к третьим странам (приложение N 8 к Договору о
+            Евразийском экономическом союзе от 29 мая 2014 года)</option>
+        <option value=2060>Компенсационная пошлина, установленная в соответствии с Протоколом о применении специальных
+            защитных, антидемпинговых и компенсационных мер по отношению к третьим странам (приложение N 8 к Договору о
+            Евразийском экономическом союзе от 29 мая 2014 года)</option>
+        <option value=5010>Налог на добавленную стоимость</option>
+        <option value=6010>Таможенные пошлины, налоги по единым ставкам в отношении товаров для личного пользования
+        </option>
+        <option value=6020>Совокупный таможенный платеж в отношении товаров для личного пользования</option>
+        <option value=2110>Триггерная защитная мера, применяемая в соответствии с Соглашением о свободной торговле между
+            Евразийским экономическим союзом и его государствами-членами, с одной стороны, и Социалистической
+            Республикой Вьетнам, с другой стороны, от 29 мая 2015 года</option>
+        <option value=2140>Предварительная специальная пошлина</option>
+        <option value=2150>Предварительная антидемпинговая пошлина</option>
+        <option value=2160>Предварительная компенсационная пошлина</option>
+        <option value=2240>Специальная пошлина, уплачиваемая в порядке, установленном для взимания соответствующих
+            предварительных видов пошлин</option>
+        <option value=2250>Антидемпинговая пошлина, уплачиваемая в порядке, установленном для взимания соответствующих
+            предварительных видов пошлин</option>
+        <option value=2260>Компенсационная пошлина, уплачиваемая в порядке, установленном для взимания соответствующих
+            предварительных видов пошлин</option>
+        <option value=1030>Таможенные сборы за хранение</option>
+        <option value=3010>Вывозная таможенная пошлина на нефть сырую, вывозимую за пределы таможенной территории
+            Евразийского экономического союза</option>
+        <option value=3020>Вывозная таможенная пошлина на нефть сырую, за исключением нефти, вывозимой за пределы
+            таможенной территории Евразийского экономического союза</option>
+        <option value=3030>Вывозная таможенная пошлина на газ природный</option>
+        <option value=3040>Вывозная таможенная пошлина на товары, выработанные из нефти</option>
+        <option value=3050>Вывозная таможенная пошлина на товары, в отношении которых не установлен отдельный код вида
+            вывозной таможенной пошлины</option>
+        <option value=3060>Вывозная таможенная пошлина на нефть сырую, вывозимую с территории Российской Федерации через
+            территорию Республики Беларусь трубопроводным транспортом в рамках отдельных соглашений</option>
+        <option value=4010>Акциз на этиловый спирт из пищевого сырья (за исключением дистиллятов винного, виноградного,
+            плодового, коньячного, кальвадосного, вискового)</option>
+        <option value=4140>Акциз на дистилляты винный, виноградный, плодовый, коньячный, кальвадосный, висковый</option>
+        <option value=4150>Акциз на этиловый спирт из непищевого сырья</option>
+        <option value=4020>Акциз на спиртосодержащую продукцию</option>
+        <option value=4120>Акциз на алкогольную продукцию с объемной долей этилового спирта свыше 9% (за исключением
+            пива, вин, фруктовых вин, игристых вин (шампанских), винных напитков, изготавливаемых без добавления
+            ректификованного этилового спирта, произведенного из пищевого сырья, и (или) спиртованных виноградного или
+            иного фруктового сусла, и (или) винного дистиллята, и (или) фруктового дистиллята)</option>
+        <option value=4130>Акциз на алкогольную продукцию с объемной долей этилового спирта до 9% включительно (за
+            исключением пива, напитков, изготавливаемых на основе пива, вин, фруктовых вин, игристых вин (шампанских),
+            сидра, пуаре, медовухи, винных напитков, изготавливаемых без добавления ректификованного этилового спирта,
+            произведенного из пищевого сырья, и (или) спиртованных виноградного или иного фруктового сусла, и (или)
+            винного дистиллята, и (или) фруктового дистиллята)</option>
+        <option value=4090>Акциз на вина, фруктовые вина (за исключением игристых вин (шампанских)), винные напитки,
+            изготавливаемые без добавления ректификованного этилового спирта, произведенного из пищевого сырья, и (или)
+            спиртованных виноградного или иного фруктового сусла, и (или) винного дистиллята, и (или) фруктового
+            дистиллята</option>
+        <option value=4200>Акциз на игристые вина (шампанские)</option>
+        <option value=4160>Акциз на сидр, пуаре, медовуху</option>
+        <option value=4100>Акциз на пиво с нормативным (стандартизированным) содержанием объемной доли этилового спирта
+            до 0,5% включительно</option>
+        <option value=4210>Акциз на пиво с нормативным (стандартизированным) содержанием объемной доли этилового спирта
+            свыше 0,5% и до 8,6% включительно, напитки, изготавливаемые на основе пива</option>
+        <option value=4220>Акциз на пиво с нормативным (стандартизированным) содержанием объемной доли этилового спирта
+            свыше 8,6%</option>
+        <option value=4030>Акциз на табак трубочный, курительный, жевательный, сосательный, нюхательный, кальянный (за
+            исключением табака, используемого в качестве сырья для производства табачной продукции)</option>
+        <option value=4230>Акциз на сигары</option>
+        <option value=4240>Акциз на сигариллы (сигариты), биди, кретек</option>
+        <option value=4250>Акциз на сигареты, папиросы</option>
+        <option value=4060>Акциз на автомобили легковые с мощностью двигателя до 67,5 кВт (90 л. с.) включительно
+        </option>
+        <option value=4180>Акциз на автомобили легковые с мощностью двигателя свыше 67,5 кВт (90 л. с.) и до 112,5 кВт
+            (150 л. с.) включительно</option>
+        <option value=4300>Акциз на автомобили легковые с мощностью двигателя свыше 112,5 кВт (150 л.с.) и до 147 кВт
+            (200 л.с.) включительно</option>
+        <option value=4310>Акциз на автомобили легковые с мощностью двигателя свыше 147 кВт (200 л.с.) и до 220 кВт (300
+            л.с.) включительно</option>
+        <option value=4320>Акциз на автомобили легковые с мощностью двигателя свыше 220 кВт (300 л.с.) и до 294 кВт (400
+            л.с.) включительно</option>
+        <option value=4330>Акциз на автомобили легковые с мощностью двигателя свыше 294 кВт (400 л.с.) и до 367 кВт (500
+            л.с.) включительно</option>
+        <option value=4340>Акциз на автомобили легковые с мощностью двигателя свыше 367 кВт (500 л.с.)</option>
+        <option value=4190>Акциз на мотоциклы с мощностью двигателя свыше 112,5 кВт (150 л. с.)</option>
+        <option value=4040>Акциз на бензин автомобильный</option>
+        <option value=4070>Акциз на дизельное топливо</option>
+        <option value=4080>Акциз на моторные масла для дизельных и (или) карбюраторных (инжекторных) двигателей</option>
+        <option value=4050>Акциз на прямогонный бензин</option>
+        <option value=4260>Акциз на средние дистилляты</option>
+        <option value=4270>Акциз на электронные системы доставки никотина</option>
+        <option value=4280>Акциз на жидкости для электронных систем доставки никотина</option>
+        <option value=4290>Акциз на табак (табачные изделия), предназначенный для потребления путем нагревания</option>
+        <option value=7015>Средства от реализации конфискатов в части реализации материальных запасов по указанному
+            имуществу</option>
+        <option value=7030>Средства, полученные в результате применения мер гражданско-правовой и административной
+            ответственности</option>
+        <option value=7040>Средства, полученные в результате применения мер уголовной ответственности по делам,
+            возбужденным таможенными органами</option>
+        <option value=7024>Штрафы, за исключением штрафов за нарушение валютного законодательства Российской Федерации и
+            актов органов валютного регулирования, назначаемых таможенными органами, и штрафов за нарушение
+            законодательства Российской Федерации об основах конституционного строя Российской Федерации, о
+            государственной власти Российской Федерации, о государственной службе Российской Федерации, о выборах и
+            референдумах Российской Федерации, об Уполномоченном по правам человека в Российской Федерации</option>
+        <option value=7025>Штрафы за нарушение валютного законодательства Российской Федерации и актов органов валютного
+            регулирования, назначаемые таможенными органами</option>
+        <option value=7026>Штрафы за нарушение законодательства Российской Федерации об основах конституционного строя
+            Российской Федерации, о государственной власти Российской Федерации, о государственной службе Российской
+            Федерации, о выборах и референдумах Российской Федерации, об Уполномоченном по правам человека в Российской
+            Федерации</option>
+        <option value=7027>Денежные взыскания (штрафы) за нарушение законодательства Российской Федерации о
+            противодействии легализации (отмыванию) доходов, полученных преступным путем, и финансированию терроризма,
+            об обороте наркотических и психотропных средств</option>
+        <option value=7028>Денежные взыскания (штрафы) за нарушение законодательства Российской Федерации о
+            государственном контроле за осуществлением международных автомобильных перевозок</option>
+        <option value=7029>Денежные взыскания (штрафы) за нарушение лесного законодательства Российской Федерации на
+            лесных участках, находящихся в федеральной собственности</option>
+        <option value=7031>Денежные взыскания (штрафы) за административные правонарушения, посягающие на здоровье,
+            предусмотренные Кодексом Российской Федерации об административных правонарушениях</option>
+        <option value=9010>Субсидии и иные суммы, не уплаченные либо полученные прямо или косвенно в качестве выплат,
+            льгот либо возмещений в связи с вывозом товаров с таможенной территории</option>
+        <option value=9020>Иные виды платежей, взимание которых возложено на таможенные органы</option>
+        <option value=9030>Прочие доходы от оказания платных услуг получателями средств и компенсации затрат</option>
+        <option value=9040>Прочие неналоговые доходы</option>
+        <option value=9050>Прочие поступления от внешнеэкономической деятельности</option>
+        <option value=9070>Авансовые платежи в счет будущих таможенных и иных платежей</option>
+        <option value=9080>Обеспечение исполнения обязанности по уплате таможенных пошлин, налогов, специальных,
+            антидемпинговых, компенсационных пошлин, за исключением такого обеспечения, вносимого денежным залогом
+        </option>
+        <option value=9090>Денежный залог, внесенный в качестве обеспечения исполнения обязанности по уплате таможенных
+            пошлин, налогов, специальных, антидемпинговых, компенсационных пошлин</option>
+        <option value=9180>Сбор за стоимость бланка паспорта транспортного средства (паспорта шасси транспортного
+            средства), реализуемого юридическим лицам, осуществляющим ввоз транспортных средств в Российскую Федерацию
+        </option>
+        <option value=9810>Обеспечение исполнения обязанностей юридического лица, осуществляющего деятельность в сфере
+            таможенного дела в качестве таможенного представителя и таможенного перевозчика</option>
+        <option value=9820>Обеспечение исполнения обязанностей юридического лица, осуществляющего деятельность в сфере
+            таможенного дела в качестве таможенного представителя, и обеспечение исполнения обязанностей уполномоченного
+            экономического оператора</option>
+        <option value=9910>Обеспечение исполнения обязанностей юридического лица, осуществляющего деятельность в сфере
+            таможенного дела в качестве таможенного представителя</option>
+        <option value=9920>Обеспечение исполнения обязанностей юридического лица, осуществляющего деятельность в сфере
+            таможенного дела в качестве таможенного перевозчика</option>
+        <option value=9930>Обеспечение исполнения обязанностей юридического лица, осуществляющего деятельность в сфере
+            таможенного дела в качестве владельца склада временного хранения</option>
+        <option value=9940>Обеспечение исполнения обязанностей юридического лица, осуществляющего деятельность в сфере
+            таможенного дела в качестве владельца таможенного склада</option>
+        <option value=9950>Обеспечение исполнения обязанностей юридического лица, осуществляющего деятельность в сфере
+            таможенного дела в качестве владельца магазина беспошлинной торговли</option>
+        <option value=9960>Обеспечение исполнения обязанностей уполномоченного экономического оператора</option>
+        <option value=9970>Обеспечение исполнения обязанностей юридического лица, осуществляющего деятельность в сфере
+            таможенного дела в качестве владельца свободного склада</option>
+        <option value=9980>Обеспечение исполнения обязанностей юридического лица, осуществляющего деятельность в сфере
+            таможенного дела в качестве таможенного перевозчика, и обеспечение исполнения обязанностей уполномоченного
+            экономического оператора</option>
+        <option value=9990>Обеспечение исполнения обязанностей юридического лица, осуществляющего деятельность в сфере
+            таможенного дела в качестве таможенного представителя и таможенного перевозчика, и обеспечение исполнения
+            обязанностей уполномоченного экономического оператора</option>
+        <option value=9100>Денежный залог, внесенный в качестве обеспечения исполнения обязательств организации об
+            использовании приобретенных акцизных марок, по которым обязательство организации не исполнено</option>
+        <option value=9110>Средства, уплачиваемые импортерами таможенным органам за выдачу акцизных марок</option>
+        <option value=9120>Утилизационный сбор, уплачиваемый за колесные транспортные средства (шасси) и прицепы к ним,
+            ввозимые в Российскую Федерацию, кроме колесных транспортных средств (шасси) и прицепов к ним, ввозимых с
+            территории Республики Беларусь</option>
+        <option value=9130>Утилизационный сбор, уплачиваемый за колесные транспортные средства (шасси) и прицепы к ним,
+            ввозимые в Российскую Федерацию с территории Республики Беларусь</option>
+        <option value=9150>Утилизационный сбор, уплачиваемый за самоходные машины и прицепы к ним, ввозимые в Российскую
+            Федерацию, кроме самоходных машин и прицепов к ним, ввозимых с территории Республики Беларусь</option>
+        <option value=9160>Утилизационный сбор, уплачиваемый за самоходные машины и прицепы к ним, ввозимые в Российскую
+            Федерацию с территории Республики Беларусь</option>
+        <option value=9140>Государственная пошлина за принятие предварительных решений по классификации товаров по ТН
+            ВЭД ЕАЭС</option>
+        <option value=9170>Государственная пошлина за выдачу акцизных марок с двухмерным штриховым кодом, содержащим
+            идентификатор единой государственной автоматизированной информационной системы учета объема производства и
+            оборота этилового спирта, алкогольной и спиртосодержащей продукции для маркировки алкогольной продукции
+        </option>
+    </datalist>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <datalist id="paymentCode">
+        <option value=ИУ>Уплата платежа до выпуска товаров, а в отношении товаров, выпуск которых произведен до подачи
+            декларации на товары, - до истечения сроков, указанных в пунктах 7, 10 и 11 статьи 137, пунктах 11 и 12
+            статьи 198 Таможенного кодекса Евразийского экономического союза</option>
+        <option value=ВУ>Платеж уплачен (взыскан) после выпуска товаров в полном размере исчисленной суммы, а в
+            отношении товаров, выпуск которых произведен до подачи декларации на товары, - по истечении сроков,
+            указанных в пунктах 7, 10 и 11 статьи 137, пунктах 11 и 12 статьи 198 Таможенного кодекса Евразийского
+            экономического союза</option>
+        <option value=ОП>Отсрочка уплаты таможенных пошлин, изменение срока уплаты налогов или таможенных сборов с
+            единовременным погашением суммы платежа</option>
+        <option value=РП>Рассрочка уплаты таможенных пошлин, изменение срока уплаты налогов или таможенных сборов с
+            поэтапным погашением суммы платежа</option>
+        <option value=УН>Условное исчисление таможенных пошлин, налогов и таможенных сборов, освобождение от которых
+            предусмотрено международными договорами и актами, составляющими право Евразийского экономического союза, и
+            законодательством государств - членов Евразийского экономического союза</option>
+        <option value=УР>Условное исчисление таможенных пошлин, налогов и таможенных сборов исходя из содержания
+            таможенной процедуры, условиями которой предусмотрено освобождение от уплаты таможенных пошлин, налогов и
+            таможенных сборов</option>
+        <option value=УМ>Платеж не уплачивается или уплачивается в размере, меньшем исчисленной суммы</option>
+        <option value=ВВ>Платеж уплачивается (взыскан) при частичной уплате таможенных пошлин, налогов в соответствии с
+            таможенной процедурой временного ввоза (допуска)</option>
+        <option value=ЗН>Уплата налога на добавленную стоимость методом зачета (для Республики Казахстан)</option>
+        <option value=ОЧ>Отсрочка части суммы таможенных пошлин, изменение срока уплаты части суммы налогов или
+            таможенных сборов с единовременным погашением суммы платежа</option>
+        <option value=ТР>Уплата таможенных пошлин по временной таможенной декларации в отношении товаров, перемещаемых
+            трубопроводным транспортом (для Российском Федерации)</option>
+        <option value=ПУ>Платеж подлежал бы уплате исходя из сведений, указанных в расчете размера обеспечения
+            исполнения обязанности по уплате таможенных пошлин, налогов, специальных, антидемпинговых, компенсационных
+            пошлин</option>
+    </datalist>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <datalist id="paymentType">
+        <option value=БН>В безналичной форме на соответствующий код бюджетной классификации</option>
+        <option value=БЗ>Зачетом платежа, уплаченного в безналичной форме на иной код бюджетной классификации</option>
+        <option value=НР>В наличной форме</option>
+        <option value=ПК>С применением микропроцессорных пластиковых карт</option>
+        <option value=КЗ>Зачетом платежа, уплаченного с применением микропроцессорных пластиковых карт на иной код
+            бюджетной классификации <*>
+        </option>
+        <option value=ПС>Предприятию связи</option>
+        <option value=ОБ>Путем обращения в таможенные платежи сумм, внесенных на счета, не предназначенные для
+            зачисления сумм таможенных платежей <*>
+        </option>
+        <option value=ВЗ>Взаимозачетом таможенных платежей, подлежащих уплате плательщиком, и финансовых обязательств
+            органов государственного управления, исполнительных и распорядительных органов государства - члена
+            Евразийского экономического союза перед этим плательщиком <**>
+        </option>
+        <option value=КТ>В наличной форме</option>
+        <option value=ПС>Государственному предприятию связи</option>
+        <option value=ТК>С применением микропроцессорных пластиковых карт</option>
+        <option value=ОП>Отсрочка по уплате таможенных пошлин, налогов</option>
+        <option value=РП>Рассрочка по уплате таможенных пошлин, налогов</option>
+        <option value=УН>Условное начисление таможенных пошлин, налогов и сборов, освобождение от уплаты которых
+            предусмотрено актами законодательства Российской Федерации о налогах и сборах</option>
+        <option value=УР>Условное начисление таможенных пошлин, налогов и сборов исходя из содержания таможенного
+            режима, условиями которого предусмотрено освобождение от уплаты налогов и сборов, которые подлежали бы
+            фактической уплате при выпуске декларируемых товаров для свободного обращения или вывозе с таможенной
+            территории Российской Федерации</option>
+    </datalist>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <datalist id="currencyCode">
+        <option value=933>Белорусский рубль</option>
+        <option value=051>Армянский драм</option>
+        <option value=398>Тенге</option>
+        <option value=643>Российский рубль</option>
+        <option value=417>Сом</option>
+        <option value=840>Доллар США</option>
+        <option value=978>Евро</option>
+        <option value=156>Юань</option>
+        <option value=392>Иена</option>
+    </datalist>
+    <script src="../scripts/tasking.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестирование</title>
+    <link rel="stylesheet" href="../styles/testing.css">
+</head>
+<body onload="getTransfering()">
+    
+    <form name="testing" id="testing" method="POST" autocomplete="off" action="https://sheetdb.io/api/v1/d74h4a1vd9319">
+        <div class="container">
+        <div class="mainField">
+            <div class="notes">
+                <h1>Всероссийская олимпиада по таможенному делу</h1>
+                <input class="about" type="text" name="data[usrName]" id="usrName"/>
+                <input class="about" type="text" name="data[studEvent]" id="studEvent"/>
+                <input class="about" type="text" name="data[date]" id="date"/>
+            </div>
+            <div class="subField"></div>
+        </div>
+
+        <div id="countFilled"></div>
+        
+        </div>
+    </form>
+
+    <div class="loader loader--hidden"></div>
+    <script src="../scripts/testing.js"></script>
+    
+</body>
+</html>

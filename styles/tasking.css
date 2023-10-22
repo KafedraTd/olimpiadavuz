@@ -1,0 +1,415 @@
+body {
+    --color-primary: #009579;
+    --color-primary-dark: #007f67;
+    --color-hover-input: rgb(255, 165, 0, 0.4);
+    --border-radius: 8px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    background-color: rgba(145, 207, 194, 0.6);
+   
+}
+
+#ansinp2-2-3{
+  display: none;
+}
+.classification{
+  display:inline-block;
+  align-items: center;
+  align-content: center;
+  vertical-align: middle;
+}
+a{
+  text-decoration:none;
+  color: orange;
+  transition: all 0.6s;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+
+a:hover{
+  background-color: var(--color-hover-input);
+  color: var(--color-primary);
+}
+
+a:active{
+  background-color: var(--color-primary);
+}
+.material-symbols-outlined{
+  display: inline-block;
+  vertical-align: middle;
+}
+#scorePanel,
+#fillPanel{
+  position: fixed;
+  left: 2%;
+  width: fit-content;
+  height: fit-content;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: var(--color-primary-dark);
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  background: rgba(255, 166, 0, 0.6);
+  overflow: auto;
+}
+#scorePanel{
+  top: 20vh;
+}
+#fillPanel{
+  top: 40vh;
+}
+.notes{
+  display: block;
+  margin-bottom: 50px;
+  background-color: var(--color-primary-dark);
+  border-radius: var(--border-radius);
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  transition: all 0.8s;
+}
+.subnotes{
+  display: flex;
+}
+
+.notes:hover{
+  background-color: #ffffff;
+  color: var(--color-primary-dark);
+}
+
+
+
+.question{
+  color: var(--color-primary-dark);
+  margin-top: 20px;
+  
+  font-weight: bold;
+  font-size: small;
+}
+
+
+.note{
+  font-size: small;
+}
+
+
+
+table{
+  margin-top: 25px;
+}
+table th{
+  text-align: left;
+}
+
+table td{
+  max-width: max-content;
+  vertical-align: middle;
+  width: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.paykind{
+  width: 15%;
+}
+.paymeth{
+  width: 10%;
+}
+input[type="text"],
+input[type="number"]
+{
+  text-transform: uppercase;
+  
+  
+  border: none;
+  border-bottom: solid 1px var(--color-primary-dark);
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 0;
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  padding: 5px 3px;
+  margin: 3px 3px;
+  color: #0f7a65;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.incorrect{
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+input[type="text"]{
+  text-align: left;
+}
+input[type="number"]{
+  text-align: right;
+}
+input[type="text"].center{
+  text-align: center;
+}
+
+
+input[type="text"].about{
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: small;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.rightquestion input{
+  text-align: center;
+}
+
+select{
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 0;
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  border-bottom: var(--color-primary-dark);
+  width: 100%;
+  height: 100%;
+  color: var(--color-primary-dark);
+  transition: all 0.5s;
+}
+
+
+
+
+
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+select:hover{
+  background-color: var(--color-hover-input)
+}
+
+[data-tooltip] {
+  position: relative;
+  cursor: default;
+}
+
+[data-tooltip]::after {
+  position: absolute;
+  width: fit-content;
+  left: calc(50% - var(--tooltipWidth));
+  bottom: 105%;
+  text-align: center;
+  box-sizing: border-box;
+  content: attr(data-tooltip);
+  color: white;
+  background-color: #0f7a65;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 1vw;
+  font-weight: bold;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.2s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.80);
+}
+  
+[data-tooltip]:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.qDivMain{
+  margin-bottom: 30px;
+}
+
+.container {
+  min-width: 400px;
+  max-width: 800px;
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  background: #ffffff;
+  overflow: auto;
+}
+ 
+.btn{
+  margin-top: 60px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
+  transition: all 0.8s;
+}
+
+.btn:hover{
+  background-color: var(--color-primary-dark);
+  color: #eee;
+  cursor: pointer;
+}
+
+/* Customize the label (the container) */
+.lbl {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: all 0.5s;
+  }
+  
+/* Hide the browser's default checkbox */
+.lbl input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.lbl:hover{
+  color: var(--color-primary-dark);
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.lbl:hover input ~ .checkmark {
+  background-color: var(--color-hover-input);
+}
+
+
+.lbl input:active ~ .checkmark{
+  animation: chekmarkEffect 1s ease-in-out;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+.lbl input:checked ~ .checkmark {
+  background-color: var(--color-primary-dark);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.lbl input:checked ~ .checkmark:after {
+  display: block;
+}
+  
+/* Style the checkmark/indicator */
+.lbl .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.exists{
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 800px;
+  height: 600px;
+  overflow: auto;
+}
+
+
+
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: var(--color-primary-dark);
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+
+
+
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+
+
+
+  @keyframes chekmarkEffect {
+    0% {
+      scale: 2;
+      background-color: var(--color-primary-dark);
+      opacity: 0.6;
+    }
+    50% {
+      scale: 0.5;
+    }
+    100% {
+      scale: 1;
+      
+    }
+  }

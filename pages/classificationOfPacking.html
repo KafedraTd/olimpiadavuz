@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Упаковка</title>
+</head>
+<body>
+    <h1>Классификатор видов груза, упаковки и упаковочных материалов</h1>
+    <hr>
+
+    <table class="modalTable">
+            <tr id="header">
+                <th>Код</th>
+                <th>Наименование (рус.)</th>
+                <th>Наименование (анг.)</th>
+            </tr>
+            <tr><td>1A</td><td>Барабан стальной</td><td>Drum, steel</td></tr>
+            <tr><td>1B</td><td>Барабан, алюминиевый</td><td>Drum, aluminium</td></tr>
+            <tr><td>1D</td><td>Барабан фанерный</td><td>Drum, plywood</td></tr>
+            <tr><td>1F</td><td>Контейнер, гибкий</td><td>Container, flexible</td></tr>
+            <tr><td>1G</td><td>Барабан фибровый</td><td>Drum, fibre</td></tr>
+            <tr><td>1W</td><td>Барабан, деревянный</td><td>Drum, wooden</td></tr>
+            <tr><td>2C</td><td>Бочка (емкостью около 164 л) деревянная</td><td>Barrel, wooden</td></tr>
+            <tr><td>3A</td><td>Канистра, стальная</td><td>Jerrycan, steel</td></tr>
+            <tr><td>3H</td><td>Канистра, пластмассовая</td><td>Jerrycan, plastic</td></tr>
+            <tr><td>43</td><td>Мешок большой для крупноразмерных навалочных грузов</td><td>Bag, super bulk</td></tr>
+            <tr><td>44</td><td>Мешок полиэтиленовый</td><td>Bag, polybag</td></tr>
+            <tr><td>4A</td><td>Коробка, стальная</td><td>Box, steel</td></tr>
+            <tr><td>4B</td><td>Коробка, алюминиевая</td><td>Box, aluminium</td></tr>
+            <tr><td>4C</td><td>Коробка из естественной древесины</td><td>Box, natural wood</td></tr>
+            <tr><td>4D</td><td>Коробка, фанерная</td><td>Box, plywood</td></tr>
+            <tr><td>4F</td><td>Коробка из древесного материала</td><td>Box, reconstituted wood</td></tr>
+            <tr><td>4G</td><td>Коробка из фибрового картона</td><td>Box, fibreboard</td></tr>
+            <tr><td>4H</td><td>Коробка, пластмассовая</td><td>Box, plastic</td></tr>
+            <tr><td>5H</td><td>Мешок из полимерной ткани</td><td>Bag, woven plastic</td></tr>
+            <tr><td>5L</td><td>Мешок текстильный</td><td>Bag, textile</td></tr>
+            <tr><td>5M</td><td>Мешок, бумажный</td><td>Bag, paper</td></tr>
+            <tr><td>6H</td><td>Комбинированная упаковка: пластмассовый сосуд</td><td>Composite packaging, plastic receptacle</td></tr>
+            <tr><td>6P</td><td>Комбинированная упаковка: стеклянный сосуд</td><td>Composite packaging, glass receptacle</td></tr>
+            <tr><td>7A</td><td>Ящик автомобильный</td><td>Case, car</td></tr>
+            <tr><td>7B</td><td>Ящик деревянный</td><td>Case, wooden</td></tr>
+            <tr><td>8A</td><td>Поддон деревянный</td><td>Pallet, wooden</td></tr>
+            <tr><td>8B</td><td>Ящик деревянный</td><td>Crate, wooden</td></tr>
+            <tr><td>8C</td><td>Пачка деревянная</td><td>Bundle, wooden</td></tr>
+            <tr><td>AA</td><td>Контейнер средней грузоподъемности для массовых грузов из жесткой пластмассы</td><td>Intermediate bulk container, rigid plastic</td></tr>
+            <tr><td>AB</td><td>Сосуд, фибровый</td><td>Receptacle, fibre</td></tr>
+            <tr><td>AC</td><td>Сосуд, бумажный</td><td>Receptacle, paper</td></tr>
+            <tr><td>AD</td><td>Сосуд, деревянный</td><td>Receptacle, wooden</td></tr>
+            <tr><td>AE</td><td>Аэрозольная упаковка</td><td>Aerosol</td></tr>
+            <tr><td>AF</td><td>Поддон модульный с обечайкой 80 x 60 см</td><td>Pallet, modular, collars 80 cm x 60 cm</td></tr>
+            <tr><td>AG</td><td>Поддон в термоусадочной пленке</td><td>Pallet, shrink-wrapped</td></tr>
+            <tr><td>AH</td><td>Поддон 100 x 110 см</td><td>Pallet, 100 cm x 110 cm</td></tr>
+            <tr><td>AI</td><td>Грейферный ковш</td><td>Clamshell</td></tr>
+            <tr><td>AJ</td><td>Кулек</td><td>Cone</td></tr>
+            <tr><td>AL</td><td>Шар</td><td>Ball</td></tr>
+            <tr><td>AM</td><td>Ампула, незащищенная</td><td>Ampoule, non-protected</td></tr>
+            <tr><td>AP</td><td>Ампула, защищенная</td><td>Ampoule, protected</td></tr>
+            <tr><td>AT</td><td>Пульверизатор</td><td>Atomizer</td></tr>
+            <tr><td>AV</td><td>Капсула</td><td>Capsule</td></tr>
+            <tr><td>B4</td><td>Лента</td><td>Belt</td></tr>
+            <tr><td>BA</td><td>Бочка (емкостью около 164 л)</td><td>Barrel</td></tr>
+            <tr><td>BB</td><td>Бобина</td><td>Bobbin</td></tr>
+            <tr><td>BC</td><td>Ящик решетчатый для бутылок</td><td>Bottlecrate/bottlerack</td></tr>
+            <tr><td>BD</td><td>Доска</td><td>Board</td></tr>
+            <tr><td>BE</td><td>Пакет (пачка/связка)</td><td>Bundle</td></tr>
+            <tr><td>BF</td><td>Баллон, незащищенный</td><td>Balloon, non-protected</td></tr>
+            <tr><td>BG</td><td>Мешок</td><td>Bag</td></tr>
+            <tr><td>BH</td><td>Пачка (пакет/связка)</td><td>Bunch</td></tr>
+            <tr><td>BI</td><td>Бункер</td><td>Bin</td></tr>
+            <tr><td>BJ</td><td>Бадья</td><td>Bucket</td></tr>
+            <tr><td>BK</td><td>Корзина</td><td>Basket</td></tr>
+            <tr><td>BL</td><td>Кипа, спрессованная</td><td>Bale, compressed</td></tr>
+            <tr><td>BM</td><td>Чан</td><td>Basin</td></tr>
+            <tr><td>BN</td><td>Кипа, неспрессованная</td><td>Bale, non-compressed</td></tr>
+            <tr><td>BO</td><td>Бутылка цилиндрическая незащищенная</td><td>Bottle, non-protected, cylindrical</td></tr>
+            <tr><td>BP</td><td>Баллон, защищенный</td><td>Balloon, protected</td></tr>
+            <tr><td>BQ</td><td>Бутылка цилиндрическая защищенная</td><td>Bottle, protected cylindrical</td></tr>
+            <tr><td>BR</td><td>Брус (брусок)</td><td>Bar</td></tr>
+            <tr><td>BS</td><td>Бутылка с выпуклыми стенками незащищенная</td><td>Bottle, non-protected, bulbous</td></tr>
+            <tr><td>BT</td><td>Рулон (обивочного или настилочного материала)</td><td>Bolt</td></tr>
+            <tr><td>BU</td><td>Бочка для вина или пива</td><td>Butt</td></tr>
+            <tr><td>BV</td><td>Бутылка с выпуклыми стенками защищенная</td><td>Bottle, protected bulbous</td></tr>
+            <tr><td>BW</td><td>Коробка для жидкостей</td><td>Box, for liquids</td></tr>
+            <tr><td>BX</td><td>Коробка</td><td>Box</td></tr>
+            <tr><td>BY</td><td>Доска в пакете/пачке/связке</td><td>Board, in bundle/bunch/truss</td></tr>
+            <tr><td>BZ</td><td>Брус (брусок) в пакете/пачке/связке</td><td>Bars, in bundle/bunch/truss</td></tr>
+            <tr><td>CA</td><td>Банка (емкостью менее 5 л) жестяная прямоугольная</td><td>Can, rectangular</td></tr>
+            <tr><td>CB</td><td>Ящик решетчатый для пива</td><td>Crate, beer</td></tr>
+            <tr><td>CC</td><td>Бидон</td><td>Churn</td></tr>
+            <tr><td>CD</td><td>Банка (емкостью менее 5 л) жестяная с ручкой и выпускным отверстием</td><td>Can, with handle and spout</td></tr>
+            <tr><td>CE</td><td>Корзина, рыбацкая</td><td>Creel</td></tr>
+            <tr><td>CF</td><td>Кофр</td><td>Coffer</td></tr>
+            <tr><td>CG</td><td>Клеть</td><td>Cage</td></tr>
+            <tr><td>CH</td><td>Сундук</td><td>Chest</td></tr>
+            <tr><td>CI</td><td>Банка жестяная для сухих продуктов (массой до 2,2 кг)</td><td>Canister</td></tr>
+            <tr><td>CJ</td><td>Гроб</td><td>Coffin</td></tr>
+            <tr><td>CK</td><td>Бочка</td><td>Cask</td></tr>
+            <tr><td>CL</td><td>Бухта</td><td>Coil</td></tr>
+            <tr><td>CM</td><td>Кардная лента</td><td>Card</td></tr>
+            <tr><td>CN</td><td>Контейнер, прочее транспортировочное оборудование, кроме поименованного</td><td>Container, not otherwise specified as transport equipment</td></tr>
+            <tr><td>CO</td><td>Бутыль оплетенная незащищенная</td><td>Carboy, non-protected</td></tr>
+            <tr><td>CP</td><td>Бутыль оплетенная защищенная</td><td>Carboy, protected</td></tr>
+            <tr><td>CQ</td><td>Кассета</td><td>Cartridge</td></tr>
+            <tr><td>CR</td><td>Ящик, решетчатый (или обрешетка)</td><td>Crate</td></tr>
+            <tr><td>CS</td><td>Ящик</td><td>Case</td></tr>
+            <tr><td>CT</td><td>Коробка, картонная</td><td>Carton</td></tr>
+            <tr><td>CU</td><td>Чаша</td><td>Cup</td></tr>
+            <tr><td>CV</td><td>Чехол</td><td>Cover</td></tr>
+            <tr><td>CW</td><td>Клеть, роликовая</td><td>Cage, roll</td></tr>
+            <tr><td>CX</td><td>Банка (емкостью менее 5 л) жестяная цилиндрическая</td><td>Can, cylindrical</td></tr>
+            <tr><td>CY</td><td>Цилиндр</td><td>Cylinder</td></tr>
+            <tr><td>CZ</td><td>Брезент</td><td>Canvas</td></tr>
+            <tr><td>DA</td><td>Ящик решетчатый (или обрешетка) многослойный пластмассовый</td><td>Crate, multiple layer, plastic</td></tr>
+            <tr><td>DB</td><td>Ящик решетчатый (или обрешетка) многослойный деревянный</td><td>Crate, multiple layer, wooden</td></tr>
+            <tr><td>DC</td><td>Ящик решетчатый (или обрешетка) многослойный картонный</td><td>Crate, multiple layer, cardboard</td></tr>
+            <tr><td>DG</td><td>Клеть (многооборотная) Общего фонда транспортировочного оборудования ЕС</td><td>Cage, Commonwealth Handling Equipment Pool (CHEP)</td></tr>
+            <tr><td>DH</td><td>Коробка (многооборотная) из Общего фонда транспортировочного оборудования ЕС, Еврокоробка</td><td>Box, Commonwealth Handling Equipment Pool (CHEP), Eurobox</td></tr>
+            <tr><td>DI</td><td>Барабан, железный</td><td>Drum, iron</td></tr>
+            <tr><td>DJ</td><td>Бутыль оплетенная большая (емкостью от 9 до 54 л) незащищенная</td><td>Demijohn, non-protected</td></tr>
+            <tr><td>DK</td><td>Ящик решетчатый для массовых грузов картонный</td><td>Crate, bulk, cardboard</td></tr>
+            <tr><td>DL</td><td>Ящик решетчатый для массовых грузов пластмассовый</td><td>Crate, bulk, plastic</td></tr>
+            <tr><td>DM</td><td>Ящик решетчатый для массовых грузов деревянный</td><td>Crate, bulk, wooden</td></tr>
+            <tr><td>DN</td><td>Дозатор</td><td>Dispenser</td></tr>
+            <tr><td>DP</td><td>Бутыль оплетенная большая (емкостью от 9 до 54 л) защищенная</td><td>Demijohn, protected</td></tr>
+            <tr><td>DR</td><td>Барабан</td><td>Drum</td></tr>
+            <tr><td>DS</td><td>Лоток с одним настилом без покрытия пластмассовый</td><td>Tray, one layer no cover, plastic</td></tr>
+            <tr><td>DT</td><td>Лоток с одним настилом без покрытия деревянный</td><td>Tray, one layer no cover, wooden</td></tr>
+            <tr><td>DU</td><td>Лоток с одним настилом без покрытия полистироловый</td><td>Tray, one layer no cover, polystyrene</td></tr>
+            <tr><td>DV</td><td>Лоток с одним настилом без покрытия картонный</td><td>Tray, one layer no cover, cardboard</td></tr>
+            <tr><td>DW</td><td>Лоток с двумя настилами без покрытия пластмассовый</td><td>Tray, two layers no cover, plastic tray</td></tr>
+            <tr><td>DX</td><td>Лоток с двумя настилами без покрытия деревянный</td><td>Tray, two layers no cover, wooden</td></tr>
+            <tr><td>DY</td><td>Лоток с двумя настилами без покрытия картонный</td><td>Tray, two layers no cover, cardboard</td></tr>
+            <tr><td>EC</td><td>Мешок, пластмассовый</td><td>Bag, plastic</td></tr>
+            <tr><td>ED</td><td>Ящик с поддоном</td><td>Case, with pallet base</td></tr>
+            <tr><td>EE</td><td>Ящик с поддоном деревянный</td><td>Case, with pallet base, wooden</td></tr>
+            <tr><td>EF</td><td>Ящик с поддоном картонный</td><td>Case, with pallet base, cardboard</td></tr>
+            <tr><td>EG</td><td>Ящик с поддоном пластмассовый</td><td>Case, with pallet base, plastic</td></tr>
+            <tr><td>EH</td><td>Ящик с поддоном металлический</td><td>Case, with pallet base, metal</td></tr>
+            <tr><td>EI</td><td>Ящик, изотермический</td><td>Case, isothermic</td></tr>
+            <tr><td>EN</td><td>Конверт</td><td>Envelope</td></tr>
+            <tr><td>FC</td><td>Ящик решетчатый для фруктов</td><td>Crate, fruit</td></tr>
+            <tr><td>FD</td><td>Ящик решетчатый (или обрешетка) рамный</td><td>Crate, framed</td></tr>
+            <tr><td>FE</td><td>Мягкий мешок, Гибкая цистерна</td><td>Flexitank, Flexibag</td></tr>
+            <tr><td>FI</td><td>Бочонок (емкостью около 41 л)</td><td>Firkin</td></tr>
+            <tr><td>FL</td><td>Фляга</td><td>Flask</td></tr>
+            <tr><td>FO</td><td>Сундучок</td><td>Footlocker</td></tr>
+            <tr><td>FP</td><td>Кассета с пленкой (фильмпак)</td><td>Filmpack</td></tr>
+            <tr><td>FR</td><td>Рама</td><td>Frame</td></tr>
+            <tr><td>FT</td><td>Контейнер для пищевых продуктов</td><td>Foodtainer</td></tr>
+            <tr><td>FX</td><td>Мешок, гибкий контейнер</td><td>Bag, flexible container</td></tr>
+            <tr><td>GB</td><td>Баллон, газовый</td><td>Bottle, gas</td></tr>
+            <tr><td>GI</td><td>Балка</td><td>Girder</td></tr>
+            <tr><td>GL</td><td>Контейнер, галлон</td><td>Container, gallon</td></tr>
+            <tr><td>GR</td><td>Сосуд, стеклянный</td><td>Receptacle, glass</td></tr>
+            <tr><td>GY</td><td>Мешок из мешковины</td><td>Bag, gunny</td></tr>
+            <tr><td>GZ</td><td>Балка в пакете/пачке/связке</td><td>Girders, in bundle/bunch/truss</td></tr>
+            <tr><td>HA</td><td>Корзина с ручкой, пластмассовая</td><td>Basket, with handle, plastic</td></tr>
+            <tr><td>HB</td><td>Корзина с ручкой из древесины</td><td>Basket, with handle, wooden</td></tr>
+            <tr><td>HC</td><td>Корзина с ручкой, картонная</td><td>Basket, with handle, cardboard</td></tr>
+            <tr><td>HG</td><td>Бочка емкостью 238 л (хогсхед)</td><td>Hogshead</td></tr>
+            <tr><td>HN</td><td>Крюк</td><td>Hanger</td></tr>
+            <tr><td>HR</td><td>Корзина с крышкой</td><td>Hamper</td></tr>
+            <tr><td>IA</td><td>Упаковка демонстрационная деревянная</td><td>Package, display, wooden</td></tr>
+            <tr><td>IB</td><td>Упаковка демонстрационная картонная</td><td>Package, display, cardboard</td></tr>
+            <tr><td>IC</td><td>Упаковка демонстрационная пластмассовая</td><td>Package, display, plastic</td></tr>
+            <tr><td>ID</td><td>Упаковка демонстрационная металлическая</td><td>Package, display, metal</td></tr>
+            <tr><td>IE</td><td>Упаковка, выставочная</td><td>Package, show</td></tr>
+            <tr><td>IF</td><td>Упаковка, выпрессованная</td><td>Package, flow</td></tr>
+            <tr><td>IG</td><td>Упаковка в оберточной бумаге</td><td>Package, paper wrapped</td></tr>
+            <tr><td>IH</td><td>Барабан, пластмассовый</td><td>Drum, plastic</td></tr>
+            <tr><td>IK</td><td>Упаковка картонная с отверстиями для бутылок</td><td>Package, cardboard, with bottle grip-holes</td></tr>
+            <tr><td>IN</td><td>Слиток</td><td>Ingot</td></tr>
+            <tr><td>IZ</td><td>Слитки в пакете/пачке/связке</td><td>Ingots, in bundle/bunch/truss</td></tr>
+            <tr><td>JB</td><td>Мешок, большой</td><td>Bag, jumbo</td></tr>
+            <tr><td>JC</td><td>Канистра, прямоугольная</td><td>Jerrican, rectangular</td></tr>
+            <tr><td>JG</td><td>Кувшин, маленький</td><td>Jug</td></tr>
+            <tr><td>JR</td><td>Банка широкогорлая (емкостью около 4,5 литров)</td><td>Jar</td></tr>
+            <tr><td>JT</td><td>Мешок, джутовый</td><td>Jute bag</td></tr>
+            <tr><td>JY</td><td>Канистра, цилиндрическая</td><td>Jerrican, cylindrical</td></tr>
+            <tr><td>KG</td><td>Бочонок (емкостью около 46 л)</td><td>Keg</td></tr>
+            <tr><td>KI</td><td>Набор</td><td>Kit</td></tr>
+            <tr><td>LE</td><td>Багаж</td><td>Luggage</td></tr>
+            <tr><td>LG</td><td>Бревно</td><td>Log</td></tr>
+            <tr><td>LT</td><td>Грузовая партия (лот)</td><td>Lot</td></tr>
+            <tr><td>LU</td><td>Ящик</td><td>Lug</td></tr>
+            <tr><td>LV</td><td>Короб деревянный (лифтван) размером около 220 см (длина) x 115 см (ширина) x 220 см (высота)</td><td>Liftvan</td></tr>
+            <tr><td>LZ</td><td>Бревно в пакете/пачке/связке</td><td>Logs, in bundle/bunch/truss</td></tr>
+            <tr><td>MA</td><td>Ящик металлический</td><td>Crate, metal</td></tr>
+            <tr><td>MB</td><td>Пакет бумажный многослойный</td><td>Bag, multiply</td></tr>
+            <tr><td>MC</td><td>Ящик решетчатый для молока</td><td>Crate, milk</td></tr>
+            <tr><td>ME</td><td>Контейнер металлический</td><td>Container, metal</td></tr>
+            <tr><td>MR</td><td>Сосуд, металлический</td><td>Receptacle, metal</td></tr>
+            <tr><td>MS</td><td>Мешок (куль) многослойный</td><td>Sack, multi-wall</td></tr>
+            <tr><td>MT</td><td>Мешок, рогожный</td><td>Mat</td></tr>
+            <tr><td>MW</td><td>Сосуд с пластмассовым покрытием</td><td>Receptacle, plastic wrapped</td></tr>
+            <tr><td>MX</td><td>Спичечный коробок</td><td>Matchbox</td></tr>
+            <tr><td>NE</td><td>Неупакованный или нерасфасованный</td><td>Unpacked or unpackaged</td></tr>
+            <tr><td>NF</td><td>Неупакованный или нерасфасованный одноместный груз</td><td>Unpacked or unpackaged, single unit</td></tr>
+            <tr><td>NG</td><td>Неупакованный или нерасфасованный многоместный груз</td><td>Unpacked or unpackaged, multiple units</td></tr>
+            <tr><td>NS</td><td>Гнездо (ячейка)</td><td>Nest</td></tr>
+            <tr><td>NT</td><td>Сетка</td><td>Net</td></tr>
+            <tr><td>NU</td><td>Сетка трубчатая пластмассовая</td><td>Net, tube, plastic</td></tr>
+            <tr><td>NV</td><td>Сетка трубчатая текстильная</td><td>Net, tube, textile</td></tr>
+            <tr><td>OT</td><td>Октабин</td><td>Octabin</td></tr>
+            <tr><td>OU</td><td>Контейнер наружный</td><td>Container, outer</td></tr>
+            <tr><td>P2</td><td>Лоток</td><td>Pan</td></tr>
+            <tr><td>PA</td><td>Пакет</td><td>Packet</td></tr>
+            <tr><td>PB</td><td>Поддон, ящичный</td><td>Pallet, box</td></tr>
+            <tr><td>PC</td><td>Бандероль</td><td>Parcel</td></tr>
+            <tr><td>PD</td><td>Поддон модульный с обечайкой 80 x 100 см</td><td>Pallet, modular, collars 80 cm x 100 cm</td></tr>
+            <tr><td>PE</td><td>Поддон модульный с обечайкой 80 x 120 см</td><td>Pallet, modular, collars 80 cm x 120 cm</td></tr>
+            <tr><td>PF</td><td>Штабель</td><td>Pen</td></tr>
+            <tr><td>PG</td><td>Плита</td><td>Plate</td></tr>
+            <tr><td>PH</td><td>Кувшин, большой</td><td>Pitcher</td></tr>
+            <tr><td>PI</td><td>Труба</td><td>Pipe</td></tr>
+            <tr><td>PJ</td><td>Корзина из шпона для ягод и фруктов</td><td>Punnet</td></tr>
+            <tr><td>PK</td><td>Упаковка</td><td>Package</td></tr>
+            <tr><td>PL</td><td>Ведро</td><td>Pail</td></tr>
+            <tr><td>PN</td><td>Доска, толстая</td><td>Plank</td></tr>
+            <tr><td>PO</td><td>Пакет (мешочек)</td><td>Pouch</td></tr>
+            <tr><td>PP</td><td>Штука</td><td>Piece</td></tr>
+            <tr><td>PR</td><td>Сосуд, пластмассовый</td><td>Receptacle, plastic</td></tr>
+            <tr><td>PT</td><td>Горшок</td><td>Pot</td></tr>
+            <tr><td>PU</td><td>Лоток</td><td>Tray</td></tr>
+            <tr><td>PV</td><td>Труба в пакете/пачке/связке</td><td>Pipes, in bundle/bunch/truss</td></tr>
+            <tr><td>PX</td><td>Поддон</td><td>Pallet</td></tr>
+            <tr><td>PY</td><td>Плиты в пакете/пачке/связке</td><td>Plates, in bundle/bunch/truss</td></tr>
+            <tr><td>PZ</td><td>Доска толстая в пакете/пачке/связке</td><td>Planks, in bundle/bunch/truss</td></tr>
+            <tr><td>QA</td><td>Барабан стальной с несъемным днищем</td><td>Drum, steel, non-removable head</td></tr>
+            <tr><td>QB</td><td>Барабан стальной со съемным днищем</td><td>Drum, steel, removable head</td></tr>
+            <tr><td>QC</td><td>Барабан алюминиевый с несъемным днищем</td><td>Drum, aluminium, non-removable head</td></tr>
+            <tr><td>QD</td><td>Барабан алюминиевый со съемным днищем</td><td>Drum, aluminium, removable head</td></tr>
+            <tr><td>QF</td><td>Барабан пластмассовый с несъемным днищем</td><td>Drum, plastic, non-removable head</td></tr>
+            <tr><td>QG</td><td>Барабан пластмассовый со съемным днищем</td><td>Drum, plastic, removable head</td></tr>
+            <tr><td>QH</td><td>Бочка (емкостью около 164 л) деревянная шпунтованная</td><td>Barrel, wooden, bung type</td></tr>
+            <tr><td>QJ</td><td>Бочка (емкостью около 164 л) деревянная со съемным днищем</td><td>Barrel, wooden, removable head</td></tr>
+            <tr><td>QK</td><td>Канистра стальная с несъемным днищем</td><td>Jerrican, steel, non-removable head</td></tr>
+            <tr><td>QL</td><td>Канистра стальная со съемным днищем</td><td>Jerrican, steel, removable head</td></tr>
+            <tr><td>QM</td><td>Канистра пластмассовая с несъемным днищем</td><td>Jerrican, plastic, non-removable head</td></tr>
+            <tr><td>QN</td><td>Канистра пластмассовая со съемным днищем</td><td>Jerrican, plastic, removable head</td></tr>
+            <tr><td>QP</td><td>Коробка деревянная из естественной древесины обыкновенная</td><td>Box, wooden, natural wood, ordinary</td></tr>
+            <tr><td>QQ</td><td>Коробка деревянная из естественной древесины с плотно пригнанными стенками</td><td>Box, wooden, natural wood, with sift proof walls</td></tr>
+            <tr><td>QR</td><td>Коробка, пенопластовая</td><td>Box, plastic, expanded</td></tr>
+            <tr><td>QS</td><td>Коробка из твердой пластмассы</td><td>Box, plastic, solid</td></tr>
+            <tr><td>RD</td><td>Прут</td><td>Rod</td></tr>
+            <tr><td>RG</td><td>Кольцо</td><td>Ring</td></tr>
+            <tr><td>RJ</td><td>Стойка, вешалка для одежды</td><td>Rack, clothing hanger</td></tr>
+            <tr><td>RK</td><td>Стойка</td><td>Rack</td></tr>
+            <tr><td>RL</td><td>Катушка</td><td>Reel</td></tr>
+            <tr><td>RO</td><td>Рулон (полосового материала)</td><td>Roll</td></tr>
+            <tr><td>RT</td><td>Сетка типа используемой для овощей или фруктов</td><td>Rednet</td></tr>
+            <tr><td>RZ</td><td>Прут в пакете/пачке/связке</td><td>Rods, in bundle/bunch/truss</td></tr>
+            <tr><td>SA</td><td>Мешок (куль)</td><td>Sack</td></tr>
+            <tr><td>SB</td><td>Сляб</td><td>Slab</td></tr>
+            <tr><td>SC</td><td>Ящик решетчатый (или обрешетка) мелкий</td><td>Crate, shallow</td></tr>
+            <tr><td>SD</td><td>Шпиндель</td><td>Spindle</td></tr>
+            <tr><td>SE</td><td>Сундук, морской</td><td>Sea-chest</td></tr>
+            <tr><td>SH</td><td>Пакетик</td><td>Sachet</td></tr>
+            <tr><td>SI</td><td>Стеллаж</td><td>Skid</td></tr>
+            <tr><td>SK</td><td>Ящик, каркасный</td><td>Case, skeleton</td></tr>
+            <tr><td>SL</td><td>Лист, прокладной</td><td>Slipsheet</td></tr>
+            <tr><td>SM</td><td>Лист, металлический</td><td>Sheet metal</td></tr>
+            <tr><td>SO</td><td>Шпулька</td><td>Spool</td></tr>
+            <tr><td>SP</td><td>Лист с пластмассовым покрытием</td><td>Sheet, plastic wrapping</td></tr>
+            <tr><td>SS</td><td>Ящик, стальной</td><td>Case, steel</td></tr>
+            <tr><td>ST</td><td>Лист</td><td>Sheet</td></tr>
+            <tr><td>SU</td><td>Чемодан</td><td>Suitcase</td></tr>
+            <tr><td>SV</td><td>Конверт, стальной</td><td>Envelope, steel</td></tr>
+            <tr><td>SW</td><td>В термоусадочной пленке</td><td>Shrink-wrapped</td></tr>
+            <tr><td>SX</td><td>Комплект</td><td>Set</td></tr>
+            <tr><td>SY</td><td>Гильза</td><td>Sleeve</td></tr>
+            <tr><td>SZ</td><td>Лист в пакете/пачке/связке</td><td>Sheets, in bundle/bunch/truss</td></tr>
+            <tr><td>T1</td><td>Таблетка</td><td>Tablet</td></tr>
+            <tr><td>TB</td><td>Кадка</td><td>Tub</td></tr>
+            <tr><td>TC</td><td>Чайная коробка</td><td>Tea-chest</td></tr>
+            <tr><td>TD</td><td>Трубка или туба, складывающаяся</td><td>Tube, collapsible</td></tr>
+            <tr><td>TE</td><td>Шина</td><td>Tyre</td></tr>
+            <tr><td>TG</td><td>Цистерна контейнер универсальный</td><td>Tank container, generic</td></tr>
+            <tr><td>TI</td><td>Бочка деревянная (емкостью около 200 л)</td><td>Tierce</td></tr>
+            <tr><td>TK</td><td>Цистерна, прямоугольная</td><td>Tank, rectangular</td></tr>
+            <tr><td>TL</td><td>Кадка с крышкой</td><td>Tub, with lid</td></tr>
+            <tr><td>TN</td><td>Банка, жестяная (консервная)</td><td>Tin</td></tr>
+            <tr><td>TO</td><td>Бочка для вина или пива большая (емкостью около 1146 л) (тан)</td><td>Tun</td></tr>
+            <tr><td>TR</td><td>Сундук, дорожный</td><td>Trunk</td></tr>
+            <tr><td>TS</td><td>Связка</td><td>Truss</td></tr>
+            <tr><td>TT</td><td>Мешок</td><td>Bag, tote</td></tr>
+            <tr><td>TU</td><td>Трубка или туба</td><td>Tube</td></tr>
+            <tr><td>TV</td><td>Трубка или туба с насадкой</td><td>Tube, with nozzle</td></tr>
+            <tr><td>TW</td><td>Поддон</td><td>Pallet, triwall</td></tr>
+            <tr><td>TY</td><td>Цистерна, цилиндрическая</td><td>Tank, cylindrical</td></tr>
+            <tr><td>TZ</td><td>Трубка или туба в пакете/пачке/связке</td><td>Tubes, in bundle/bunch/truss</td></tr>
+            <tr><td>UC</td><td>Без клети</td><td>Uncaged</td></tr>
+            <tr><td>UN</td><td>Единица</td><td>Unit</td></tr>
+            <tr><td>VA</td><td>Бак</td><td>Vat</td></tr>
+            <tr><td>VG</td><td>Наливом газ (при 1031 мБар и 15°C)</td><td>Bulk, gas (at 1 031 mbar and 15° C)</td></tr>
+            <tr><td>VI</td><td>Флакон</td><td>Vial</td></tr>
+            <tr><td>VK</td><td>Консоль для оборудования, помещающаяся в минифургон</td><td>Vanpack</td></tr>
+            <tr><td>VL</td><td>Наливом жидкость</td><td>Bulk, liquid</td></tr>
+            <tr><td>VO</td><td>Насыпью твердые крупные частицы (мелкие куски)</td><td>Bulk, solid, large particles (nodules)</td></tr>
+            <tr><td>VP</td><td>В вакуумной упаковке</td><td>Vacuum-packed</td></tr>
+            <tr><td>VQ</td><td>Наливом газ сжиженный (при температуре/давлении, отличающихся от нормальных)</td><td>Bulk, liquefied gas (at abnormal temperature/pressure)</td></tr>
+            <tr><td>VR</td><td>Насыпью твердые гранулированные частицы (гранулы)</td><td>Bulk, solid, granular particles (grains)</td></tr>
+            <tr><td>VS</td><td>Навалом металлолом</td><td>Bulk, scrap metal</td></tr>
+            <tr><td>VY</td><td>Насыпью твердые мелкие частицы (порошки)</td><td>Bulk, solid, fine particles (powders)</td></tr>
+            <tr><td>WA</td><td>Контейнер средней грузоподъемности для массовых грузов</td><td>Intermediate bulk container</td></tr>
+            <tr><td>WB</td><td>Бутылка оплетенная</td><td>Wicker bottle</td></tr>
+            <tr><td>WC</td><td>Контейнер средней грузоподъемности для массовых грузов стальной</td><td>Intermediate bulk container, steel</td></tr>
+            <tr><td>WD</td><td>Контейнер средней грузоподъемности для массовых грузов алюминиевый</td><td>Intermediate bulk container, aluminium</td></tr>
+            <tr><td>WF</td><td>Контейнер средней грузоподъемности для массовых грузов металлический</td><td>Intermediate bulk container, metal</td></tr>
+            <tr><td>WG</td><td>Контейнер средней грузоподъемности для массовых грузов герметизированный свыше 10 КПа</td><td>Intermediate bulk container, steel, pressurised > 10 kpa</td></tr>
+            <tr><td>WH</td><td>Контейнер средней грузоподъемности для массовых грузов алюминиевый герметизированный свыше 10 КПа</td><td>Intermediate bulk container, aluminium, pressurised > 10 kpa</td></tr>
+            <tr><td>WJ</td><td>Контейнер средней грузоподъемности для массовых грузов герметизированный 10 Кпа</td><td>Intermediate bulk container, metal, pressure 10 kpa</td></tr>
+            <tr><td>WK</td><td>Контейнер средней грузоподъемности для наливных грузов стальной</td><td>Intermediate bulk container, steel, liquid</td></tr>
+            <tr><td>WL</td><td>Контейнер средней грузоподъемности для наливных грузов алюминиевый</td><td>Intermediate bulk container, aluminium, liquid</td></tr>
+            <tr><td>WM</td><td>Контейнер средней грузоподъемности для наливных грузов металлический</td><td>Intermediate bulk container, metal, liquid</td></tr>
+            <tr><td>WN</td><td>Контейнер средней грузоподъемности для массовых грузов из полимерной ткани без покрытия/вкладыша</td><td>Intermediate bulk container, woven plastic, without coat/liner</td></tr>
+            <tr><td>WP</td><td>Контейнер средней грузоподъемности для массовых грузов из полимерной ткани с покрытием</td><td>Intermediate bulk container, woven plastic, coated</td></tr>
+            <tr><td>WQ</td><td>Контейнер средней грузоподъемности для массовых грузов из полимерной ткани с вкладышем</td><td>Intermediate bulk container, woven plastic, with liner</td></tr>
+            <tr><td>WR</td><td>Контейнер средней грузоподъемности для массовых грузов из пластикового волокна с покрытием и вкладышем</td><td>Intermediate bulk container, woven plastic, coated and liner</td></tr>
+            <tr><td>WS</td><td>Контейнер средней грузоподъемности для массовых грузов из полимерной пленки</td><td>Intermediate bulk container, plastic film</td></tr>
+            <tr><td>WT</td><td>Контейнер средней грузоподъемности для массовых грузов текстильный без покрытия/вкладыша</td><td>Intermediate bulk container, textile without coat/liner</td></tr>
+            <tr><td>WU</td><td>Контейнер средней грузоподъемности для массовых грузов из естественной древесины с внутренним вкладышем</td><td>Intermediate bulk container, natural wood, with inner liner</td></tr>
+            <tr><td>WV</td><td>Контейнер средней грузоподъемности для массовых грузов текстильный с покрытием</td><td>Intermediate bulk container, textile, coated</td></tr>
+            <tr><td>WW</td><td>Контейнер средней грузоподъемности для массовых грузов текстильный с вкладышем</td><td>Intermediate bulk container, textile, with liner</td></tr>
+            <tr><td>WX</td><td>Контейнер средней грузоподъемности для массовых грузов текстильный с покрытием и вкладышем</td><td>Intermediate bulk container, textile, coated and liner</td></tr>
+            <tr><td>WY</td><td>Контейнер средней грузоподъемности для массовых грузов фанерный с внутренним вкладышем</td><td>Intermediate bulk container, plywood, with inner liner</td></tr>
+            <tr><td>WZ</td><td>Контейнер средней грузоподъемности для массовых грузов из древесного материала с внутренним вкладышем</td><td>Intermediate bulk container, reconstituted wood, with inner liner</td></tr>
+            <tr><td>XA</td><td>Мешок из полимерной ткани без внутреннего покрытия/вкладыша</td><td>Bag, woven plastic, without inner coat/liner</td></tr>
+            <tr><td>XB</td><td>Мешок из полимерной ткани, плотный</td><td>Bag, woven plastic, sift proof</td></tr>
+            <tr><td>XC</td><td>Мешок из полимерной ткани влагонепроницаемый</td><td>Bag, woven plastic, water resistant</td></tr>
+            <tr><td>XD</td><td>Мешок из полимерной пленки</td><td>Bag, plastics film</td></tr>
+            <tr><td>XF</td><td>Мешок текстильный без внутреннего покрытия/вкладыша</td><td>Bag, textile, without inner coat/liner</td></tr>
+            <tr><td>XG</td><td>Мешок текстильный плотный</td><td>Bag, textile, sift proof</td></tr>
+            <tr><td>XH</td><td>Мешок текстильный влагонепроницаемый</td><td>Bag, textile, water resistant</td></tr>
+            <tr><td>XJ</td><td>Мешок бумажный многослойный</td><td>Bag, paper, multi-wall</td></tr>
+            <tr><td>XK</td><td>Мешок бумажный многослойный влагонепроницаемый</td><td>Bag, paper, multi-wall, water resistant</td></tr>
+            <tr><td>YA</td><td>Комбинированная упаковка: пластмассовый сосуд в барабане стальном</td><td>Composite packaging, plastic receptacle in steel drum</td></tr>
+            <tr><td>YB</td><td>Комбинированная упаковка: пластмассовый сосуд в ящике решетчатом (или обрешетке) из стали</td><td>Composite packaging, plastic receptacle in steel crate box</td></tr>
+            <tr><td>YC</td><td>Комбинированная упаковка: пластмассовый сосуд в барабане алюминиевом</td><td>Composite packaging, plastic receptacle in aluminium drum</td></tr>
+            <tr><td>YD</td><td>Комбинированная упаковка: пластмассовый сосуд в ящике решетчатом (или обрешетке) из алюминия</td><td>Composite packaging, plastic receptacle in aluminium crate</td></tr>
+            <tr><td>YF</td><td>Комбинированная упаковка: пластмассовый сосуд в деревянной коробке</td><td>Composite packaging, plastic receptacle in wooden box</td></tr>
+            <tr><td>YH</td><td>Комбинированная упаковка: пластмассовый сосуд в коробке фанерной</td><td>Composite packaging, plastic receptacle in plywood box</td></tr>
+            <tr><td>YJ</td><td>Комбинированная упаковка: пластмассовый сосуд в барабане фибровом</td><td>Composite packaging, plastic receptacle in fibre drum</td></tr>
+            <tr><td>YK</td><td>Комбинированная упаковка: пластмассовый сосуд в коробке из фибрового картона</td><td>Composite packaging, plastic receptacle in fibreboard box</td></tr>
+            <tr><td>YL</td><td>Комбинированная упаковка: пластмассовый сосуд в барабане пластмассовом</td><td>Composite packaging, plastic receptacle in plastic drum</td></tr>
+            <tr><td>YM</td><td>Комбинированная упаковка: пластмассовый сосуд в коробке из твердой пластмассы</td><td>Composite packaging, plastic receptacle in solid plastic box</td></tr>
+            <tr><td>YN</td><td>Комбинированная упаковка: стеклянный сосуд в стальном барабане</td><td>Composite packaging, glass receptacle in steel drum</td></tr>
+            <tr><td>YP</td><td>Комбинированная упаковка: стеклянный сосуд в ящике решетчатом (или обрешетке) из стали</td><td>Composite packaging, glass receptacle in steel crate box</td></tr>
+            <tr><td>YQ</td><td>Комбинированная упаковка: стеклянный сосуд в барабане алюминиевом</td><td>Composite packaging, glass receptacle in aluminium drum</td></tr>
+            <tr><td>YR</td><td>Комбинированная упаковка: стеклянный сосуд в ящике решетчатом (или обрешетке) из алюминия</td><td>Composite packaging, glass receptacle in aluminium crate</td></tr>
+            <tr><td>YS</td><td>Комбинированная упаковка: стеклянный сосуд в коробке деревянной</td><td>Composite packaging, glass receptacle in wooden box</td></tr>
+            <tr><td>YT</td><td>Комбинированная упаковка: стеклянный сосуд в барабане фанерном</td><td>Composite packaging, glass receptacle in plywood drum</td></tr>
+            <tr><td>YV</td><td>Комбинированная упаковка: стеклянный сосуд в корзине плетеной с крышкой</td><td>Composite packaging, glass receptacle in wickerwork hamper</td></tr>
+            <tr><td>YW</td><td>Комбинированная упаковка: стеклянный сосуд в барабане фибровом</td><td>Composite packaging, glass receptacle in fibre drum</td></tr>
+            <tr><td>YX</td><td>Комбинированная упаковка: стеклянный сосуд в коробке из фибрового картона</td><td>Composite packaging, glass receptacle in fibreboard box</td></tr>
+            <tr><td>YY</td><td>Комбинированная упаковка: стеклянный сосуд в пакете пенопластовом</td><td>Composite packaging, glass receptacle in expandable plastic pack</td></tr>
+            <tr><td>YZ</td><td>Комбинированная упаковка: стеклянный сосуд в пакете из твердой пластмассы</td><td>Composite packaging, glass receptacle in solid plastic pack</td></tr>
+            <tr><td>ZA</td><td>Контейнер средней грузоподъемности для массовых грузов бумажный многослойный</td><td>Intermediate bulk container, paper, multi-wall</td></tr>
+            <tr><td>ZB</td><td>Мешок, большой</td><td>Bag, large</td></tr>
+            <tr><td>ZC</td><td>Контейнер средней грузоподъемности для массовых грузов бумажный многослойный влагонепроницаемый</td><td>Intermediate bulk container, paper, multi-wall, water resistant</td></tr>
+            <tr><td>ZD</td><td>Контейнер средней грузоподъемности для твердых навалочных/насыпных грузов из жесткой пластмассы с конструкционным оснащением</td><td>Intermediate bulk container, rigid plastic, with structural equipment, solids</td></tr>
+            <tr><td>ZF</td><td>Контейнер средней грузоподъемности для твердых навалочных/насыпных грузов из жесткой пластмассы автономный</td><td>Intermediate bulk container, rigid plastic, freestanding, solids</td></tr>
+            <tr><td>ZG</td><td>Контейнер средней грузоподъемности для массовых грузов из жесткой пластмассы с конструкционным оснащением герметизированный</td><td>Intermediate bulk container, rigid plastic, with structural equipment, pressurised</td></tr>
+            <tr><td>ZH</td><td>Контейнер средней грузоподъемности для массовых грузов из жесткой пластмассы автономный герметизированный</td><td>Intermediate bulk container, rigid plastic, freestanding, pressurised</td></tr>
+            <tr><td>ZJ</td><td>Контейнер средней грузоподъемности для наливных грузов из жесткой пластмассы с конструкционным оснащением</td><td>Intermediate bulk container, rigid plastic, with structural equipment, liquids</td></tr>
+            <tr><td>ZK</td><td>Контейнер средней грузоподъемности для наливных грузов из жесткой пластмассы автономный</td><td>Intermediate bulk container, rigid plastic, freestanding, liquids</td></tr>
+            <tr><td>ZL</td><td>Контейнер средней грузоподъемности для твердых навалочных/насыпных грузов составной из жесткой пластмассы</td><td>Intermediate bulk container, composite, rigid plastic, solids</td></tr>
+            <tr><td>ZM</td><td>Контейнер средней грузоподъемности для твердых навалочных/насыпных грузов составной из гибкой пластмассы</td><td>Intermediate bulk container, composite, flexible plastic, solids</td></tr>
+            <tr><td>ZN</td><td>Контейнер средней грузоподъемности для массовых грузов составной из жесткой пластмассы герметизированный</td><td>Intermediate bulk container, composite, rigid plastic, pressurised</td></tr>
+            <tr><td>ZP</td><td>Контейнер средней грузоподъемности для массовых грузов составной из гибкой пластмассы герметизированный</td><td>Intermediate bulk container, composite, flexible plastic, pressurised</td></tr>
+            <tr><td>ZQ</td><td>Контейнер средней грузоподъемности для наливных грузов составной из жесткой пластмассы</td><td>Intermediate bulk container, composite, rigid plastic, liquids</td></tr>
+            <tr><td>ZR</td><td>Контейнер средней грузоподъемности для наливных грузов составной из гибкой пластмассы</td><td>Intermediate bulk container, composite, flexible plastic, liquids</td></tr>
+            <tr><td>ZS</td><td>Контейнер средней грузоподъемности для массовых грузов составной</td><td>Intermediate bulk container, composite</td></tr>
+            <tr><td>ZT</td><td>Контейнер средней грузоподъемности для массовых грузов из фибрового картона</td><td>Intermediate bulk container, fibreboard</td></tr>
+            <tr><td>ZU</td><td>Контейнер средней грузоподъемности для массовых грузов гибкий</td><td>Intermediate bulk container, flexible</td></tr>
+            <tr><td>ZV</td><td>Контейнер средней грузоподъемности для массовых грузов из прочего металла, кроме стали</td><td>Intermediate bulk container, metal, other than steel</td></tr>
+            <tr><td>ZW</td><td>Контейнер средней грузоподъемности для массовых грузов из естественной древесины</td><td>Intermediate bulk container, natural wood</td></tr>
+            <tr><td>ZX</td><td>Контейнер средней грузоподъемности для массовых грузов фанерный</td><td>Intermediate bulk container, plywood</td></tr>
+            <tr><td>ZY</td><td>Контейнер средней грузоподъемности для массовых грузов из древесного материала</td><td>Intermediate bulk container, reconstituted wood</td></tr>
+            <tr><td>ZZ</td><td>По взаимному определению</td><td>Mutually defined</td></tr>
+        </table>                 
+    </body>
+</html>

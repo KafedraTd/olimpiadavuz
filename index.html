@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Вход</title>
+    <link rel="shortcut icon" href="images/loginico.png">
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+
+<body>
+    <div class="eventName">
+        <h1>ВСЕРОССИЙСКАЯ СТУДЕНЧЕСКАЯ ОЛИМПИАДА ПО СПЕЦИАЛЬНОСТИ "ТАМОЖЕННОЕ ДЕЛО"</h1>
+        <h2>Вузовский этап 23.10.2023</h2>
+        <h3>Северо-Кавказский федеральный университет.
+            <p>Кафедра экономики и внешнеэкономической деятельности</p>
+        </h3>
+    </div>
+    <div class="cont">
+        <div class="container">
+            <form class="form" id="login">
+                <h1 class="form__title">Авторизация</h1>
+                <div class="form__message form__message--error"></div>
+                <div class="form__input-group">
+                    <input type="text" name="data[loginUsername]" id="loginUsername" class="form__input" autofocus
+                        placeholder="ФИО или email">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" name="data[loginPassword]" id="loginPassword" class="form__input" autofocus
+                        placeholder="Пароль">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <button class="form__button" type="submit">Войти</button>
+                <p class="form__text">
+                    <a href="#" id="forgot" class="form__link"
+                        title="Временно не работает. Обратитесь к администратору">Забыли пароль?</a>
+                </p>
+                <p style="display: none;" class="form__text">
+                    <a class="form__link" href="./" id="linkCreateAccount">Еще не зарегистрированы? Создать аккаунт</a>
+                </p>
+            </form>
+            <form method="POST" action="https://sheetdb.io/api/v1/35s7lj587xbgs" class="form form--hidden"
+                id="createAccount">
+                <h1 class="form__title">Регистрация</h1>
+                <div class="form__message form__message--error"></div>
+                <div class="form__input-group">
+                    <input type="text" name="data[signupUsername]" id="signupUsername" class="form__input" autofocus
+                        placeholder="ФИО">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="text" name="data[signupEmail]" id="signupEmail" class="form__input" autofocus
+                        placeholder="Email">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" name="data[signupPassword]" id="signupPassword" class="form__input" autofocus
+                        placeholder="Пароль">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <div class="form__input-group">
+                    <input type="password" id="signupPasswordConfirm" class="form__input" autofocus
+                        placeholder="Подтверждение пароля">
+                    <div class="form__input-error-message"></div>
+                </div>
+                <button class="form__button" type="submit">Создать</button>
+                <p class="form__text">
+                    <a class="form__link" href="./" id="linkLogin">Уже есть аккаунт? Вход</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <div class="accordion"></div>
+    <label for="" class="copyright">&copy;Разработка: Амандурдыев Х.Д.</label>
+    <script src="scripts/loginv2.js"></script>
+</body>

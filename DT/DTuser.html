@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../images/declarationico.png">
+    <title>Декларация на товары</title>
+</head>
+
+<body onload="getDeclaration()">
+    <form name="declarationApp" id="declarationApp">
+      
+      <table>
+        <tr>
+          <td class="head1" colspan="40">
+            <h1 id="greeting"></h1>
+          </td>
+        </tr>
+      </table>
+    
+    <div class="container"></div>  
+    <table class="mainTable" id="mainTable">
+          <tr>
+            <td colspan="6">2 Отправитель/Экспортер</td>
+            <td colspan="4" id="check2kt"></td>
+            <td colspan="10"></td>
+            <td colspan="6">1 Декларация</td>
+            <td colspan="14">A</A></td>
+          </tr>  
+          <tr>
+            <td colspan="20" class="adminTd" id ="grafa2-1"></td>
+            <td colspan="2" class="adminTd" id="grafa1_1"></td>
+            <td colspan="2" class="adminTd" id = "grafa1_2"></td>
+            <td colspan="2" class="adminTd" id = "grafa1_3"></td>
+            <td colspan="14" class="adminTd" id="usrName"></td>
+            </tr>
+          <tr>
+            <td colspan="6" class="adminTd" id="grafa2-2"></td>
+            <td colspan="8" class="adminTd" id="grafa2-3"></td>
+            <td colspan="6" class="adminTd" id="grafa2-4"></td>
+            <td colspan="4">3 Формы</td>
+            <td colspan="2">4 Отгр.спец.</td>
+            <td colspan="14" class="adminTd" id="studEvent"></td>
+          </tr>
+          <tr>
+            <td colspan="14" class="adminTd" id="grafa2-5"></td>
+            <td colspan="2" class="adminTd" id="grafa2-6"></td>
+            <td colspan="2" class="adminTd" id="grafa2-7"></td>
+            <td colspan="2" class="adminTd" id="grafa2-8"></td>
+            <td colspan="2" class="adminTd" id="grafa3-1"></td>
+            <td colspan="2" class="adminTd" id="grafa3-2"></td>
+            <td colspan="2" class="adminTd" id="grafa4"></td>
+            <td colspan="14" class="adminTd" id="date"></td>
+          </tr>
+          <tr>
+            <td colspan="10" class="adminTd" id="grafa2-9"></td>
+            <td colspan="10" class="adminTd" id="grafa2-10"></td>
+            <td colspan="4">5 Всего товаров</td>
+            <td colspan="4">6 Всего мест</td>
+            <td colspan="15">7 Справочный номер</td>
+          </tr>
+          <tr>
+            <td colspan="10" class="adminTd" id="grafa2-11"></td>
+            <td colspan="10" class="adminTd" id="grafa2-12"></td>
+            <td colspan="4" class="adminTd" id="grafa5"></td>
+            <td colspan="4" class="adminTd" id="grafa6"></td>
+            <td colspan="12" class="adminTd" id="grafa7"></td>
+          </tr>
+          <tr>
+            <td colspan="6">8 Получатель</td>
+            <td colspan="4" id="check8kt"></td>
+            <td colspan="10"></td>
+            <td colspan="6">9 Лицо, ответственное за фин.урегулирование</td>
+            <td colspan="4"></td>
+            <td colspan="10"></td>
+          </tr>
+          <tr>
+            <td colspan="20" class="adminTd" id="grafa8-1"></td>
+            <td colspan="20" class="adminTd" id="grafa9-1"></td>
+          </tr>
+          <tr>
+            <td colspan="6" class="adminTd" id="grafa8-2"></td>
+            <td colspan="8" class="adminTd" id="grafa8-3"></td>
+            <td colspan="6" class="adminTd" id="grafa8-4"></td>
+            <td colspan="6" class="adminTd" id="grafa9-2"></td>
+            <td colspan="8" class="adminTd" id="grafa9-3"></td>
+            <td colspan="6" class="adminTd" id="grafa9-4"></td>
+          </tr>
+          <tr>
+            <td colspan="14" class="adminTd" id="grafa8-5"></td>
+            <td colspan="2" class="adminTd" id="grafa8-6"></td>
+            <td colspan="2" class="adminTd" id="grafa8-7"></td>
+            <td colspan="2" class="adminTd" id="grafa8-8"></td>
+            <td colspan="14" class="adminTd" id="grafa9-5"></td>
+            <td colspan="2" class="adminTd" id="grafa9-6"></td>
+            <td colspan="2" class="adminTd" id="grafa9-7"></td>
+            <td colspan="2" class="adminTd" id="grafa9-8"></td>
+          </tr>
+          <tr>
+            <td colspan="10" class="adminTd" id="grafa8-9"></td>
+            <td colspan="10" class="adminTd" id="grafa8-10"></td>
+            <td colspan="10" class="adminTd" id="grafa9-9"></td>
+            <td colspan="10" class="adminTd" id="grafa9-10"></td>
+          </tr>
+          <tr>
+            <td colspan="10" class="adminTd" id="grafa8-11"></td>
+            <td colspan="10" class="adminTd" id="grafa8-12"></td>
+            <td colspan="10" class="adminTd" id="grafa9-11"></td>
+            <td colspan="10" class="adminTd" id="grafa9-12"></td>
+          </tr>
+          <tr>
+            <td colspan="6">14 Декларант</td>
+            <td colspan="4"></td>
+            <td colspan="10"></td>
+            <td colspan="4">10 Стр.перв.назн./посл.отп.</td>
+            <td colspan="4">11 Торг.страна</td>
+            <td colspan="8">12 Общая таможенная стоимость</td>
+            <td colspan="4">13</td>
+          </tr>
+          <tr>
+            <td colspan="20" class="adminTd" id="grafa14-1"></td>
+            <td colspan="4"></td>
+            <td colspan="2" class="adminTd" id="grafa11"></td>
+            <td colspan="2"></td>
+            <td colspan="8" class="adminTd" id="grafa12"></td>
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td colspan="6" class="adminTd" id="grafa14-2"></td>
+            <td colspan="8" class="adminTd" id="grafa14-3"></td>
+            <td colspan="6" class="adminTd" id="grafa14-4"></td>
+            <td colspan="10">15 Страна отправления</td>
+            <td colspan="5">15 Код страны отпр.</td>
+            <td colspan="5">17 Код страны назнач.</td> 
+          </tr>
+          <tr>
+            <td colspan="14" class="adminTd" id="grafa14-5"></td>
+            <td colspan="2" class="adminTd" id="grafa14-6"></td>
+            <td colspan="2" class="adminTd" id="grafa14-7"></td>
+            <td colspan="2" class="adminTd" id="grafa14-8"></td>
+            <td colspan="10" class="adminTd" id="grafa15-1"></td>
+            <td colspan="3" class="adminTd" id="grafa15-2"></td>
+            <td colspan="2" class="adminTd" id="grafa15-3"></td>
+            <td colspan="3" class="adminTd" id="grafa17-2"></td>
+            <td colspan="2" class="adminTd" id="grafa17-3"></td>        
+          </tr>
+          <tr>
+            <td colspan="10" class="adminTd" id="grafa14-9"></td>
+            <td colspan="10" class="adminTd" id="grafa14-10"></td>
+            <td colspan="10">16 Страна происхождения</td>
+            <td colspan="10">17 Страна назначения</td>  
+            </tr>
+          <tr>
+            <td colspan="10" class="adminTd" id="grafa14-11"></td>
+            <td colspan="10" class="adminTd" id="grafa14-12"></td>
+            <td colspan="10" class="adminTd" id="grafa16"></td>
+            <td colspan="10" class="adminTd" id="grafa17-1"></td>    
+            </tr>
+          <tr>
+            <td colspan="18">18 Идентификация и страна регистрации трансп.средства при отправлении/прибытии</td>
+            <td colspan="2">19 Конт.</td>
+            <td colspan="20">20 Условия поставки</td>
+          </tr>
+          <tr>
+            <td colspan="15" class="adminTd" id="grafa18-1"></td>
+            <td colspan="3" class="adminTd" id="grafa18-2"></td>
+            <td colspan="2" class="adminTd" id="grafa19"></td>
+            <td colspan="2" class="adminTd" id="grafa20-1"></td>
+            <td colspan="16" class="adminTd" id="grafa20-2"></td>
+            <td colspan="2" class="adminTd" id="grafa20-3"></td>
+            </tr>
+          <tr>
+            <td colspan="20">21 Идентификация и страна регистрации активного трансп.средства на границе</td>
+            <td colspan="10">22 Валюта и общая сумма по счету</td>
+            <td colspan="5">23 Курс валюты</td>
+            <td colspan="5">24 Характер сделки</td>
+          </tr>
+          <tr>
+            <td colspan="17" class="adminTd" id="grafa21-1"></td>
+            <td colspan="3" class="adminTd" id="grafa21-2"></td>
+            <td colspan="2" class="adminTd" id="grafa22-1"></td>
+            <td colspan="8" class="adminTd" id="grafa22-2"></td>
+            <td colspan="5" class="adminTd" id="grafa23"></td>
+            <td colspan="3" class="adminTd" id="grafa24-1"></td>
+            <td colspan="2" class="adminTd" id="grafa24-2"></td>
+            </tr>
+          <tr>
+            <td colspan="2">25 Вид ТС на границе</td>
+            <td colspan="2">26 Вид ТС внутри страны</td>
+            <td colspan="5">29 Орган въезда/выезда</td>
+            <td></td>
+            <td colspan="3">30 Местонахождение товаров</td>
+            <td colspan="2" class="adminTd" id="grafa30-1"></td>
+            <td colspan="5" class="adminTd" id="grafa30-2"></td>
+            <td colspan="6" class="adminTd" id="grafa30-3"></td>
+            <td colspan="8" class="adminTd" id="grafa30-4"></td>
+            <td colspan="6" class="adminTd" id="grafa30-5"></td>
+            
+          </tr>
+          <tr>
+            <td colspan="2" class="adminTd" id="grafa25"></td>
+            <td colspan="2" class="adminTd" id="grafa26"></td>
+            <td colspan="5" class="adminTd" id="grafa29"></td>
+              <td>
+                <a href="https://customs.gov.ru/Structure/perechen--tamozhennyx-organov-v-for" target="_blank" class="grafaClass">
+                  <ion-icon name="information-circle"></ion-icon>
+                </a>
+              </td>
+            <td colspan="5" class="adminTd" id="grafa30-6"></td>
+            <td colspan="5" class="adminTd" id="grafa30-7"></td>
+            <td colspan="14" class="adminTd" id="grafa30-8"></td>
+            <td colspan="2" class="adminTd" id="grafa30-9"></td>
+            <td colspan="2" class="adminTd" id="grafa30-10"></td>
+            <td colspan="2" class="adminTd" id="grafa30-11"></td>                 
+          </tr>
+
+          <tr>
+            <td class="td1" colspan="21">31 Грузовые места и описание товаров</td>
+            <td colspan="5">32 Товар №</td>
+            <td colspan="14">33 Код товара 
+              <a href="https://www.consultant.ru/cons/cgi/online.cgi?from=411576-54&req=doc&rnd=fhuoCA&base=LAW&n=405649#K6x5Q2TG6U1B4D1e1" target="_blank" class="grafaClass">
+                <ion-icon name="information-circle"></ion-icon>
+               </a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="21">
+              <div class="container">
+                <div class="classification">
+                  <a href="../pages/classificationOfPacking.html" target="_blank" class="grafaClass">
+                   УПАКОВКА<ion-icon name="information-circle"></ion-icon>
+                  </a>
+                </div>
+                <div class="classification">
+                  <a href="https://customs.gov.ru/registers/objects-intellectual-property" target="_blank" class="grafaClass">
+                    ТРОИС<ion-icon name="information-circle"></ion-icon>
+                  </a>
+                </div>
+                <div class="classification">
+                  <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=4Pqu02Tbq9HYNuR1&cacheid=2686A8C0D51AC15B38033F9150A5E802&mode=splus&base=LAW&n=409905#4squ02TYSrF1Csp41" target="_blank" class="grafaClass">
+                    ОПИСАНИЕ+<ion-icon name="information-circle"></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </td>
+            <td colspan="2" class="adminTd" id="grafa32-1"></td>
+            <td colspan="3" class="adminTd" id="grafa32-2"></td>
+            <td colspan="5" class="adminTd" id="grafa33-1"></td>
+            <td colspan="1" class="adminTd" id="grafa33-2"></td>
+            <td colspan="1" class="adminTd" id="grafa33-3"></td>
+            <td colspan="1" class="adminTd" id="grafa33-4"></td>
+            <td colspan="1" class="adminTd" id="grafa33-5"></td>
+            <td colspan="1" class="adminTd" id="grafa33-6"></td>
+            <td colspan="3" class="adminTd" id="grafa33-7"></td>
+            <td><a href="../pages/classificationOfDti.html" target="_blank" class="grafaClass">
+                <ion-icon name="information-circle"></ion-icon>
+              </a>
+            </td>          
+            </tr>
+          <tr>
+            <td colspan="26" rowspan="7" class="adminTd" id="grafa31"></td>
+            <td colspan="5">34 Код страны происх.</td>
+            <td colspan="5">35 Вес брутто (кг)</td>
+            <td colspan="3">36 Преференция</td>
+            <td>
+              <a href="../pages/classificationOfPref.html" target="_blank" class="grafaClass">
+                <ion-icon name="information-circle"></ion-icon>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" class="adminTd" id="grafa34-1"></td>
+            <td colspan="2" class="adminTd" id="grafa34-2"></td>
+            <td colspan="5" class="adminTd" id="grafa35"></td>
+            <td colspan="1" class="adminTd" id="grafa36-1"></td>
+            <td colspan="1" class="adminTd" id="grafa36-2"></td>
+            <td colspan="1" class="adminTd" id="grafa36-3"></td>
+            <td colspan="1" class="adminTd" id="grafa36-4"></td>
+          </tr>
+          <tr>
+            <td colspan="5">37 Процедура</td>
+            <td colspan="6">38 Вес нетто (кг)</td>
+            <td colspan="3">39 Квота</td>
+          </tr>
+          <tr>
+            <td colspan="3" class="adminTd" id="grafa37-1"></td>
+            <td colspan="2" class="adminTd" id="grafa37-2"></td>
+            <td colspan="3" class="adminTd" id="grafa38-1"></td>
+            <td colspan="3" class="adminTd" id="grafa38-2"></td>              
+            <td colspan="3" class="adminTd" id="grafa39"></td>
+          </tr>
+          <tr>
+            <td colspan="14">40 Общая декларация/Предшествующий документ</td>
+          </tr>
+          <tr>
+            <td colspan="14" class="adminTd" id="grafa40"></td>
+          </tr>
+          <tr>
+            <td colspan="6">41 Дополнит.единицы</td>
+            <td colspan="6">42 Цена товара</td>
+            <td colspan="2">43 Код МОС</td>
+          </tr>
+          
+          <tr>
+            <td colspan="10">44 Дополнит. информация/ Представл. Документы</td>
+            <td colspan="5"></td>
+            <td colspan="5"></td>
+            <td colspan="4"></td>
+            <td colspan="2"></td>
+            <td colspan="6" class="adminTd" id="grafa41"></td>
+            <td colspan="6" class="adminTd" id="grafa42"></td>
+            <td class="adminTd" id="grafa43-1"></td>
+            <td class="adminTd" id="grafa43-2"></td>
+          </tr>
+          <tr>
+            <td colspan="10" class="adminTd" id="grafa44t1-1"></td>
+            <td colspan="10" class="adminTd" id="grafa44t1-7"></td>
+            <td colspan="10" class="adminTd" id="grafa44t1-13"></td>
+            <td colspan="2">Код ДИ</td>
+            <td colspan="8">45 Таможенная стоимость
+              <a href="../pages/classificationOfIncoterms.html" target="_blank" class="grafaClass">
+                <ion-icon name="information-circle"></ion-icon>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="10" class="adminTd" id="grafa44t1-2"></td>
+            <td colspan="10" class="adminTd" id="grafa44t1-8"></td>
+            <td colspan="10" class="adminTd" id="grafa44t1-14"></td>
+            <td colspan="2" class="adminTd" id="CodeDI"></td>
+            <td colspan="8" class="adminTd" id="grafa45"></td>
+          </tr>
+          <tr>
+            <td colspan="10" class="adminTd" id="grafa44t1-3"></td>
+            <td colspan="10" class="adminTd" id="grafa44t1-9"></td>
+            <td colspan="10" class="adminTd" id="grafa44t1-15"></td>
+            <td colspan="10">46 Статистическая стоимость</td>
+          </tr>
+          <tr>
+            <td colspan="10" class="adminTd" id="grafa44t1-4"></td>
+            <td colspan="10" class="adminTd" id="grafa44t1-10"></td>
+            <td colspan="10" class="adminTd" id="grafa44t1-16"></td>
+            <td colspan="10" class="adminTd" id="grafa46"></td>  
+          </tr>
+          <tr>
+            <td colspan="10" class="adminTd" id="grafa44t1-5"></td>
+            <td colspan="10" class="adminTd" id="grafa44t1-11"></td>
+            <td colspan="10" class="adminTd" id="grafa44t1-17"></td>
+            <td colspan="10"></td>  
+          </tr>
+          <tr>
+            <td colspan="10" class="adminTd" id="grafa44t1-6"></td>
+            <td colspan="10" class="adminTd" id="grafa44t1-12"></td>
+            <td colspan="10" class="adminTd" id="grafa44t1-18"></td>
+            <td colspan="10"></td>
+          </tr>
+  
+          <tr>
+            <td colspan="10">47 Исчисление платежей</td>
+            <td colspan="5"></td>
+            <td colspan="5"></td>
+              <td colspan="6">
+                <div class="classification">
+                  <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&rnd=fhuoCA&base=LAW&n=380602&cacheid=91EE7F34B05BC0730D198101904AB3CB&mode=rubr#Ra75Q2TaUet7JsxD" target="_blank" class="grafaClass">
+                    ТК<ion-icon name="information-circle"></ion-icon>
+                  </a>
+                  <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=hjT4Q2TusrhNFg7W1&cacheid=34C7E46B2C6BB044D11BD43EE418465C&mode=splus&base=LAW&n=348846#5QZ4Q2TvIDpWFYG3" target="_blank" class="grafaClass">
+                    СБР<ion-icon name="information-circle"></ion-icon>
+                  </a>
+                  <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=UXg4Q2TyVxCwXmp4&cacheid=403FF677C1B08A5ABEB1BB6956E2A5EB&mode=splus&rnd=fhuoCA&base=LAW&n=401724#Qnh4Q2T02vm8gCSt1" target="_blank" class="grafaClass">
+                    ВЫП<ion-icon name="information-circle"></ion-icon>
+                   </a>
+                   <a href="https://www.consultant.ru/cons/cgi/online.cgi?from=411576-54&req=doc&rnd=fhuoCA&base=LAW&n=405649#kFl4Q2T4hfmvtTS8" target="_blank" class="grafaClass">
+                    ВОП<ion-icon name="information-circle"></ion-icon>
+                   </a>
+                   <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&rnd=fhuoCA&base=LAW&n=412738&cacheid=7DA405B11854BBDB7AC3B02398498801&mode=rubr#uVp4Q2TmjK4VDRr9" target="_blank" class="grafaClass">
+                    НАЛ<ion-icon name="information-circle"></ion-icon>
+                   </a>
+                </div>
+            </td>
+            <td colspan="12">48 Отсрочка платежей</td>
+            <td colspan="2">49 Реквизиты склада</td>
+          </tr>
+          <tr>
+            <td colspan="2" class="adminTd" id="grafa47t1-1"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-2"></td>
+            <td colspan="6" class="adminTd" id="grafa47t1-3"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-4"></td>
+            <td colspan="2" class="adminTd" id="grafa47t1-5"></td>
+            <td colspan="12" class="adminTd" id="grafa48"></td>
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="adminTd" id="grafa47t1-6"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-7"></td>
+            <td colspan="6" class="adminTd" id="grafa47t1-8"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-9"></td>
+            <td colspan="2" class="adminTd" id="grafa47t1-10"></td>
+            <td colspan="14">B Подробности подсчета 
+              <a href="../pages/classificationOfPay.html" target="_blank" class="grafaClass">
+                <ion-icon name="information-circle"></ion-icon>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="adminTd" id="grafa47t1-11"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-12"></td>
+            <td colspan="6" class="adminTd" id="grafa47t1-13"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-14"></td>
+            <td colspan="2" class="adminTd" id="grafa47t1-15"></td>
+            <td colspan="14" class="adminTd" id="grafaB-1"></td>
+            
+          </tr>
+          <tr>
+            <td colspan="2" class="adminTd" id="grafa47t1-16"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-17"></td>
+            <td colspan="6" class="adminTd" id="grafa47t1-18"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-19"></td>
+            <td colspan="2" class="adminTd" id="grafa47t1-20"></td>
+            <td colspan="14" class="adminTd" id="grafaB-2"></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="adminTd" id="grafa47t1-21"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-22"></td>
+            <td colspan="6" class="adminTd" id="grafa47t1-23"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-24"></td>
+            <td colspan="2" class="adminTd" id="grafa47t1-25"></td>
+            <td colspan="14" class="adminTd" id="grafaB-3"></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="adminTd" id="grafa47t1-26"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-27"></td>
+            <td colspan="6" class="adminTd" id="grafa47t1-28"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-29"></td>
+            <td colspan="2" class="adminTd" id="grafa47t1-30"></td>
+            <td colspan="14" class="adminTd" id="grafaB-4"></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="adminTd" id="grafa47t1-31"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-32"></td>
+            <td colspan="6" class="adminTd" id="grafa47t1-33"></td>
+            <td colspan="8" class="adminTd" id="grafa47t1-34"></td>
+            <td colspan="2" class="adminTd" id="grafa47t1-35"></td>
+            <td colspan="14" class="adminTd" id="grafaB-5"></td>
+          </tr>
+          
+          
+          <tr>
+            <td colspan="26"></td>
+            <td colspan="14">C</td>
+          
+          </tr>
+          <tr>
+            <td colspan="6" rowspan = "5"></td>
+            <td colspan="6" rowspan="5">
+              <button type="button" name="addNewGoods" onclick="addingNewGoods ()">
+                <span class="buttonText">Добавить товар</span>
+                <span class="buttonIcon"><ion-icon name="add-circle"></ion-icon></span>
+              </button></td>
+            <td colspan = "2" rowspan="5"></td>
+            <td colspan="6" rowspan="5">
+              <button type="button" name="remNewGoods" onclick="removingNewGoods ()">
+              <span class="buttonText">Удалить товар</span>
+              <span class="buttonIcon"><ion-icon name="remove-circle"></ion-icon></span>
+              </button></td>
+            <td colspan="6" rowspan="5"></td>
+            
+            </tr>
+          <tr>
+           <td colspan="14" class="adminTd" id="grafaC-1"></td> 
+          </tr>
+          <tr>
+            <td colspan="14" class="adminTd" id="grafaC-2"></td> 
+          </tr>
+          <tr>
+            <td colspan="14" class="adminTd" id="grafaC-3"></td> 
+          </tr>
+          <tr>
+            <td colspan="14" class="adminTd" id="grafaC-4"></td> 
+          </tr>
+          <tr>
+            <td colspan="24">52 Гарантия недействительна для</td>
+            <td colspan="2">Код</td>
+            <td colspan="9">53 Орган (и страна) назначения </td>
+            <td colspan="5"></td>
+          </tr>
+          <tr>
+            <td colspan="24" class="adminTd" id="grafa52-1"></td>
+            <td colspan="2" class="adminTd" id="grafa52-2"></td>
+            <td colspan="14"></td>
+          </tr>
+          <tr>
+            <td colspan="24">D</td>
+            <td colspan="12">54 Место и дата</td>
+            <td colspan="4" class="adminTd" id="date"></td>
+          </tr>
+          <tr>
+            <td colspan="24" class="adminTd" id="grafaD-1"></td>
+            <td class="adminTd" id="grafa54-1"></td>
+            <td colspan="6" class="adminTd" id="grafa54-2"></td>
+            <td colspan="9" class="adminTd" id="grafa54-3"></td>
+          </tr>
+          <tr>
+            <td colspan="24" class="adminTd" id="grafaD-2"></td>
+            <td colspan="4" class="adminTd" id="grafa54-4"></td>
+            <td colspan="8" class="adminTd" id="grafa54-5"></td>
+            <td colspan="4" class="adminTd" id="grafa54-6"></td>
+          </tr>
+          <tr>
+            <td colspan="24" class="adminTd" id="grafaD-3"></td>
+            <td class="adminTd" id="grafa54-22"></td>
+            <td colspan="5" class="adminTd" id="grafa54-7"></td>
+            <td colspan="5" class="adminTd" id="grafa54-8"></td>
+            <td colspan="5" class="adminTd" id="grafa54-9"></td>
+          </tr>
+          <tr>
+            <td colspan="24" class="adminTd" id="grafaD-4"></td>
+            <td colspan="3" class="adminTd" id="grafa54-10"></td>
+            <td colspan="2" class="adminTd" id="grafa54-11"></td>
+            <td colspan="2" class="adminTd" id="grafa54-12"></td>
+            <td colspan="5" class="adminTd" id="grafa54-13"></td>
+            <td colspan="4" class="adminTd" id="grafa54-14"></td>
+          </tr>
+          <tr>
+            <td colspan="24" rowspan="3" class="adminTd" id="grafaD-5"></td>
+            <td colspan="16" class="adminTd" id="grafa54-15"></td>
+          </tr>
+          <tr>
+            <td colspan="8" class="adminTd" id="grafa54-16"></td>
+            <td colspan="8" class="adminTd" id="grafa54-17"></td>
+          </tr>
+            <td colspan="2" class="adminTd" id="grafa54-18"></td>
+            <td colspan="6" class="adminTd" id="grafa54-19"></td>
+            <td colspan="4" class="adminTd" id="grafa54-20"></td>    
+            <td colspan="4" class="adminTd" id="grafa54-21"></td>    
+          <tr class = "measure">
+            <td class = "additionalList">1</td><td class = "additionalList">2</td><td class = "additionalList">3</td>
+            <td class = "additionalList">4</td><td class = "additionalList">5</td><td class = "additionalList">6</td>
+            <td class = "additionalList">7</td><td class = "additionalList">8</td><td class = "additionalList">9</td>
+            <td class = "additionalList">10</td><td class = "additionalList">11</td><td class = "additionalList">12</td>
+            <td class = "additionalList">13</td><td class = "additionalList">14</td><td class = "additionalList">15</td>
+            <td class = "additionalList">16</td><td class = "additionalList">17</td><td class = "additionalList">18</td>
+            <td class = "additionalList">19</td><td class = "additionalList">20</td><td class = "additionalList">21</td>
+            <td class = "additionalList">22</td><td class = "additionalList">23</td><td class = "additionalList">24</td>
+            <td class = "additionalList">25</td><td class = "additionalList">26</td><td class = "additionalList">27</td>
+            <td class = "additionalList">28</td><td class = "additionalList">29</td><td class = "additionalList">30</td>
+            <td class = "additionalList">31</td><td class = "additionalList">32</td><td class = "additionalList">33</td>
+            <td class = "additionalList">34</td><td class = "additionalList">35</td><td class = "additionalList">36</td>
+            <td class = "additionalList">37</td><td class = "additionalList">38</td><td class = "additionalList">39</td>
+            <td class = "additionalList">40</td>
+          </tr>
+          <tr>
+            <td class = "additionalList" colspan="40">ДОБАВОЧНЫЙ ЛИСТ</td>
+          </tr>
+              <tbody class="goodNumber" id="goodNumber2">
+                <tr>
+                  <td class="td1" colspan="21">31 Грузовые места и описание товаров</td>
+                  <td colspan="5">32 Товар №</td>
+                  <td colspan="14">33 Код товара 
+                    <a href="https://www.consultant.ru/cons/cgi/online.cgi?from=411576-54&req=doc&rnd=fhuoCA&base=LAW&n=405649#K6x5Q2TG6U1B4D1e1" target="_blank" class="grafaClass">
+                      <ion-icon name="information-circle"></ion-icon>
+                     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="21">
+                    <div class="container">
+                      <div class="classification">
+                        <a href="../pages/classificationOfPacking.html" target="_blank" class="grafaClass">
+                         УПАКОВКА<ion-icon name="information-circle"></ion-icon>
+                        </a>
+                      </div>
+                      <div class="classification">
+                        <a href="https://customs.gov.ru/registers/objects-intellectual-property" target="_blank" class="grafaClass">
+                          ТРОИС<ion-icon name="information-circle"></ion-icon>
+                        </a>
+                      </div>
+                      <div class="classification">
+                        <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=4Pqu02Tbq9HYNuR1&cacheid=2686A8C0D51AC15B38033F9150A5E802&mode=splus&base=LAW&n=409905#4squ02TYSrF1Csp41" target="_blank" class="grafaClass">
+                          ОПИСАНИЕ+<ion-icon name="information-circle"></ion-icon>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                  <td colspan="2" class="adminTd" id="2-grafa32-1"></td>
+                  <td colspan="3" class="adminTd" id="2-grafa32-2"></td>
+                  <td colspan="5" class="adminTd" id="2-grafa33-1"></td>
+                  <td colspan="1" class="adminTd" id="2-grafa33-2"></td>
+                  <td colspan="1" class="adminTd" id="2-grafa33-3"></td>
+                  <td colspan="1" class="adminTd" id="2-grafa33-4"></td>
+                  <td colspan="1" class="adminTd" id="2-grafa33-5"></td>
+                  <td colspan="1" class="adminTd" id="2-grafa33-6"></td>
+                  <td colspan="3" class="adminTd" id="2-grafa33-7"></td>
+                  <td><a href="../pages/classificationOfDti.html" target="_blank" class="grafaClass">
+                      <ion-icon name="information-circle"></ion-icon>
+                    </a>
+                  </td>          
+                  </tr>
+                <tr>
+                  <td colspan="26" rowspan="7" class="adminTd" id="2-grafa31"></td>
+                  <td colspan="5">34 Код страны происх.</td>
+                  <td colspan="5">35 Вес брутто (кг)</td>
+                  <td colspan="3">36 Преференция</td>
+                  <td>
+                    <a href="../pages/classificationOfPref.html" target="_blank" class="grafaClass">
+                      <ion-icon name="information-circle"></ion-icon>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="adminTd" id="2-grafa34-1"></td>
+                  <td colspan="2" class="adminTd" id="2-grafa34-2"></td>
+                  <td colspan="5" class="adminTd" id="2-grafa35"></td>
+                  <td colspan="1" class="adminTd" id="2-grafa36-1"></td>
+                  <td colspan="1" class="adminTd" id="2-grafa36-2"></td>
+                  <td colspan="1" class="adminTd" id="2-grafa36-3"></td>
+                  <td colspan="1" class="adminTd" id="2-grafa36-4"></td>
+                </tr>
+                <tr>
+                  <td colspan="5">37 Процедура</td>
+                  <td colspan="6">38 Вес нетто (кг)</td>
+                  <td colspan="3">39 Квота</td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="adminTd" id="2-grafa37-1"></td>
+                  <td colspan="2" class="adminTd" id="2-grafa37-2"></td>
+                  <td colspan="3" class="adminTd" id="2-grafa38-1"></td>
+                  <td colspan="3" class="adminTd" id="2-grafa38-2"></td>              
+                  <td colspan="3" class="adminTd" id="2-grafa39"></td>
+                </tr>
+                <tr>
+                  <td colspan="14">40 Общая декларация/Предшествующий документ</td>
+                </tr>
+                <tr>
+                  <td colspan="14" class="adminTd" id="2-grafa40"></td>
+                </tr>
+                <tr>
+                  <td colspan="6">41 Дополнит.единицы</td>
+                  <td colspan="6">42 Цена товара</td>
+                  <td colspan="2">43 Код МОС</td>
+                </tr>
+                
+                <tr>
+                  <td colspan="10">44 Дополнит. информация/ Представл. Документы</td>
+                  <td colspan="5"></td>
+                  <td colspan="5"></td>
+                  <td colspan="4"></td>
+                  <td colspan="2"></td>
+                  <td colspan="6" class="adminTd" id="2-grafa41"></td>
+                  <td colspan="6" class="adminTd" id="2-grafa42"></td>
+                  <td class="adminTd" id="2-grafa43-1"></td>
+                  <td class="adminTd" id="2-grafa43-2"></td>
+                </tr>
+                <tr>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-1"></td>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-7"></td>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-13"></td>
+                  <td colspan="2">Код ДИ</td>
+                  <td colspan="8">45 Таможенная стоимость
+                    <a href="../pages/classificationOfIncoterms.html" target="_blank" class="grafaClass">
+                      <ion-icon name="information-circle"></ion-icon>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-2"></td>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-8"></td>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-14"></td>
+                  <td colspan="2" class="adminTd" id="2-CodeDI"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa45"></td>
+                </tr>
+                <tr>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-3"></td>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-9"></td>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-15"></td>
+                  <td colspan="10">46 Статистическая стоимость</td>
+                </tr>
+                <tr>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-4"></td>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-10"></td>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-16"></td>
+                  <td colspan="10" class="adminTd" id="2-grafa46"></td>  
+                </tr>
+                <tr>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-5"></td>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-11"></td>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-17"></td>
+                  <td colspan="10"></td>  
+                </tr>
+                <tr>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-6"></td>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-12"></td>
+                  <td colspan="10" class="adminTd" id="2-grafa44t1-18"></td>
+                  <td colspan="10"></td>
+                </tr>
+        
+                <tr>
+                  <td colspan="10">47 Исчисление платежей</td>
+                  <td colspan="5"></td>
+                  <td colspan="5"></td>
+                    <td colspan="6">
+                      <div class="classification">
+                        <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&rnd=fhuoCA&base=LAW&n=380602&cacheid=91EE7F34B05BC0730D198101904AB3CB&mode=rubr#Ra75Q2TaUet7JsxD" target="_blank" class="grafaClass">
+                          ТК<ion-icon name="information-circle"></ion-icon>
+                        </a>
+                        <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=hjT4Q2TusrhNFg7W1&cacheid=34C7E46B2C6BB044D11BD43EE418465C&mode=splus&base=LAW&n=348846#5QZ4Q2TvIDpWFYG3" target="_blank" class="grafaClass">
+                          СБР<ion-icon name="information-circle"></ion-icon>
+                        </a>
+                        <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=UXg4Q2TyVxCwXmp4&cacheid=403FF677C1B08A5ABEB1BB6956E2A5EB&mode=splus&rnd=fhuoCA&base=LAW&n=401724#Qnh4Q2T02vm8gCSt1" target="_blank" class="grafaClass">
+                          ВЫП<ion-icon name="information-circle"></ion-icon>
+                         </a>
+                         <a href="https://www.consultant.ru/cons/cgi/online.cgi?from=411576-54&req=doc&rnd=fhuoCA&base=LAW&n=405649#kFl4Q2T4hfmvtTS8" target="_blank" class="grafaClass">
+                          ВОП<ion-icon name="information-circle"></ion-icon>
+                         </a>
+                         <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&rnd=fhuoCA&base=LAW&n=412738&cacheid=7DA405B11854BBDB7AC3B02398498801&mode=rubr#uVp4Q2TmjK4VDRr9" target="_blank" class="grafaClass">
+                          НАЛ<ion-icon name="information-circle"></ion-icon>
+                         </a>
+                      </div>
+                  </td>
+                  <td colspan="12">48 Отсрочка платежей</td>
+                  <td colspan="2">49 Реквизиты склада</td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-1"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-2"></td>
+                  <td colspan="6" class="adminTd" id="2-grafa47t1-3"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-4"></td>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-5"></td>
+                  <td colspan="12" class="adminTd" id="2-grafa48"></td>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-6"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-7"></td>
+                  <td colspan="6" class="adminTd" id="2-grafa47t1-8"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-9"></td>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-10"></td>
+                  <td colspan="7" rowspan="5">
+                    <button type="button" name="addNewGoods" onclick="addingNewGoods ()">
+                      <span class="buttonText">Добавить товар</span>
+                      <span class="buttonIcon"><ion-icon name="add-circle"></ion-icon></span>
+                    </button>
+                  </td>
+                  <td colspan="7" rowspan="5">
+                    <button type="button" name="remNewGoods" onclick="removingNewGoods ()">
+                      <span class="buttonText">Удалить товар</span>
+                      <span class="buttonIcon"><ion-icon name="remove-circle"></ion-icon></span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-11"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-12"></td>
+                  <td colspan="6" class="adminTd" id="2-grafa47t1-13"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-14"></td>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-15"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-16"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-17"></td>
+                  <td colspan="6" class="adminTd" id="2-grafa47t1-18"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-19"></td>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-20"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-21"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-22"></td>
+                  <td colspan="6" class="adminTd" id="2-grafa47t1-23"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-24"></td>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-25"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-26"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-27"></td>
+                  <td colspan="6" class="adminTd" id="2-grafa47t1-28"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-29"></td>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-30"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-31"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-32"></td>
+                  <td colspan="6" class="adminTd" id="2-grafa47t1-33"></td>
+                  <td colspan="8" class="adminTd" id="2-grafa47t1-34"></td>
+                  <td colspan="2" class="adminTd" id="2-grafa47t1-35"></td>
+                  <td colspan="14"></td>
+                </tr>
+              </tbody>
+              <tbody class="goodNumber" id="goodNumber3">
+                <tr>
+                  <td class="td1" colspan="21">31 Грузовые места и описание товаров</td>
+                  <td colspan="5">32 Товар №</td>
+                  <td colspan="14">33 Код товара 
+                    <a href="https://www.consultant.ru/cons/cgi/online.cgi?from=411576-54&req=doc&rnd=fhuoCA&base=LAW&n=405649#K6x5Q2TG6U1B4D1e1" target="_blank" class="grafaClass">
+                      <ion-icon name="information-circle"></ion-icon>
+                     </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="21">
+                    <div class="container">
+                      <div class="classification">
+                        <a href="../pages/classificationOfPacking.html" target="_blank" class="grafaClass">
+                         УПАКОВКА<ion-icon name="information-circle"></ion-icon>
+                        </a>
+                      </div>
+                      <div class="classification">
+                        <a href="https://customs.gov.ru/registers/objects-intellectual-property" target="_blank" class="grafaClass">
+                          ТРОИС<ion-icon name="information-circle"></ion-icon>
+                        </a>
+                      </div>
+                      <div class="classification">
+                        <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=4Pqu02Tbq9HYNuR1&cacheid=2686A8C0D51AC15B38033F9150A5E802&mode=splus&base=LAW&n=409905#4squ02TYSrF1Csp41" target="_blank" class="grafaClass">
+                          ОПИСАНИЕ+<ion-icon name="information-circle"></ion-icon>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                  <td colspan="2" class="adminTd" id="3-grafa32-1"></td>
+                  <td colspan="3" class="adminTd" id="3-grafa32-2"></td>
+                  <td colspan="5" class="adminTd" id="3-grafa33-1"></td>
+                  <td colspan="1" class="adminTd" id="3-grafa33-2"></td>
+                  <td colspan="1" class="adminTd" id="3-grafa33-3"></td>
+                  <td colspan="1" class="adminTd" id="3-grafa33-4"></td>
+                  <td colspan="1" class="adminTd" id="3-grafa33-5"></td>
+                  <td colspan="1" class="adminTd" id="3-grafa33-6"></td>
+                  <td colspan="3" class="adminTd" id="3-grafa33-7"></td>
+                  <td><a href="../pages/classificationOfDti.html" target="_blank" class="grafaClass">
+                      <ion-icon name="information-circle"></ion-icon>
+                    </a>
+                  </td>          
+                  </tr>
+                <tr>
+                  <td colspan="26" rowspan="7" class="adminTd" id="3-grafa31"></td>
+                  <td colspan="5">34 Код страны происх.</td>
+                  <td colspan="5">35 Вес брутто (кг)</td>
+                  <td colspan="3">36 Преференция</td>
+                  <td>
+                    <a href="../pages/classificationOfPref.html" target="_blank" class="grafaClass">
+                      <ion-icon name="information-circle"></ion-icon>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="adminTd" id="3-grafa34-1"></td>
+                  <td colspan="2" class="adminTd" id="3-grafa34-2"></td>
+                  <td colspan="5" class="adminTd" id="3-grafa35"></td>
+                  <td colspan="1" class="adminTd" id="3-grafa36-1"></td>
+                  <td colspan="1" class="adminTd" id="3-grafa36-2"></td>
+                  <td colspan="1" class="adminTd" id="3-grafa36-3"></td>
+                  <td colspan="1" class="adminTd" id="3-grafa36-4"></td>
+                </tr>
+                <tr>
+                  <td colspan="5">37 Процедура</td>
+                  <td colspan="6">38 Вес нетто (кг)</td>
+                  <td colspan="3">39 Квота</td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="adminTd" id="3-grafa37-1"></td>
+                  <td colspan="2" class="adminTd" id="3-grafa37-2"></td>
+                  <td colspan="3" class="adminTd" id="3-grafa38-1"></td>
+                  <td colspan="3" class="adminTd" id="3-grafa38-2"></td>              
+                  <td colspan="3" class="adminTd" id="3-grafa39"></td>
+                </tr>
+                <tr>
+                  <td colspan="14">40 Общая декларация/Предшествующий документ</td>
+                </tr>
+                <tr>
+                  <td colspan="14" class="adminTd" id="3-grafa40"></td>
+                </tr>
+                <tr>
+                  <td colspan="6">41 Дополнит.единицы</td>
+                  <td colspan="6">42 Цена товара</td>
+                  <td colspan="2">43 Код МОС</td>
+                </tr>
+                
+                <tr>
+                  <td colspan="10">44 Дополнит. информация/ Представл. Документы</td>
+                  <td colspan="5"></td>
+                  <td colspan="5"></td>
+                  <td colspan="4"></td>
+                  <td colspan="2"></td>
+                  <td colspan="6" class="adminTd" id="3-grafa41"></td>
+                  <td colspan="6" class="adminTd" id="3-grafa42"></td>
+                  <td class="adminTd" id="3-grafa43-1"></td>
+                  <td class="adminTd" id="3-grafa43-2"></td>
+                </tr>
+                <tr>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-1"></td>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-7"></td>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-13"></td>
+                  <td colspan="2">Код ДИ</td>
+                  <td colspan="8">45 Таможенная стоимость
+                    <a href="../pages/classificationOfIncoterms.html" target="_blank" class="grafaClass">
+                      <ion-icon name="information-circle"></ion-icon>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-2"></td>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-8"></td>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-14"></td>
+                  <td colspan="2" class="adminTd" id="3-CodeDI"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa45"></td>
+                </tr>
+                <tr>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-3"></td>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-9"></td>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-15"></td>
+                  <td colspan="10">46 Статистическая стоимость</td>
+                </tr>
+                <tr>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-4"></td>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-10"></td>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-16"></td>
+                  <td colspan="10" class="adminTd" id="3-grafa46"></td>  
+                </tr>
+                <tr>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-5"></td>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-11"></td>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-17"></td>
+                  <td colspan="10"></td>  
+                </tr>
+                <tr>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-6"></td>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-12"></td>
+                  <td colspan="10" class="adminTd" id="3-grafa44t1-18"></td>
+                  <td colspan="10"></td>
+                </tr>
+        
+                <tr>
+                  <td colspan="10">47 Исчисление платежей</td>
+                  <td colspan="5"></td>
+                  <td colspan="5"></td>
+                    <td colspan="6">
+                      <div class="classification">
+                        <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&rnd=fhuoCA&base=LAW&n=380602&cacheid=91EE7F34B05BC0730D198101904AB3CB&mode=rubr#Ra75Q2TaUet7JsxD" target="_blank" class="grafaClass">
+                          ТК<ion-icon name="information-circle"></ion-icon>
+                        </a>
+                        <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=hjT4Q2TusrhNFg7W1&cacheid=34C7E46B2C6BB044D11BD43EE418465C&mode=splus&base=LAW&n=348846#5QZ4Q2TvIDpWFYG3" target="_blank" class="grafaClass">
+                          СБР<ion-icon name="information-circle"></ion-icon>
+                        </a>
+                        <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=UXg4Q2TyVxCwXmp4&cacheid=403FF677C1B08A5ABEB1BB6956E2A5EB&mode=splus&rnd=fhuoCA&base=LAW&n=401724#Qnh4Q2T02vm8gCSt1" target="_blank" class="grafaClass">
+                          ВЫП<ion-icon name="information-circle"></ion-icon>
+                         </a>
+                         <a href="https://www.consultant.ru/cons/cgi/online.cgi?from=411576-54&req=doc&rnd=fhuoCA&base=LAW&n=405649#kFl4Q2T4hfmvtTS8" target="_blank" class="grafaClass">
+                          ВОП<ion-icon name="information-circle"></ion-icon>
+                         </a>
+                         <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&rnd=fhuoCA&base=LAW&n=412738&cacheid=7DA405B11854BBDB7AC3B02398498801&mode=rubr#uVp4Q2TmjK4VDRr9" target="_blank" class="grafaClass">
+                          НАЛ<ion-icon name="information-circle"></ion-icon>
+                         </a>
+                      </div>
+                  </td>
+                  <td colspan="12">48 Отсрочка платежей</td>
+                  <td colspan="2">49 Реквизиты склада</td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-1"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-2"></td>
+                  <td colspan="6" class="adminTd" id="3-grafa47t1-3"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-4"></td>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-5"></td>
+                  <td colspan="12" class="adminTd" id="3-grafa48"></td>
+                  <td colspan="4"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-6"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-7"></td>
+                  <td colspan="6" class="adminTd" id="3-grafa47t1-8"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-9"></td>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-10"></td>
+                  <td colspan="7" rowspan="5">
+                    <button type="button" name="addNewGoods" onclick="addingNewGoods ()">
+                      <span class="buttonText">Добавить товар</span>
+                      <span class="buttonIcon"><ion-icon name="add-circle"></ion-icon></span>
+                    </button>
+                  </td>
+                  <td colspan="7" rowspan="5">
+                    <button type="button" name="remNewGoods" onclick="removingNewGoods ()">
+                      <span class="buttonText">Удалить товар</span>
+                      <span class="buttonIcon"><ion-icon name="remove-circle"></ion-icon></span>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-11"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-12"></td>
+                  <td colspan="6" class="adminTd" id="3-grafa47t1-13"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-14"></td>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-15"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-16"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-17"></td>
+                  <td colspan="6" class="adminTd" id="3-grafa47t1-18"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-19"></td>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-20"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-21"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-22"></td>
+                  <td colspan="6" class="adminTd" id="3-grafa47t1-23"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-24"></td>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-25"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-26"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-27"></td>
+                  <td colspan="6" class="adminTd" id="3-grafa47t1-28"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-29"></td>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-30"></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-31"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-32"></td>
+                  <td colspan="6" class="adminTd" id="3-grafa47t1-33"></td>
+                  <td colspan="8" class="adminTd" id="3-grafa47t1-34"></td>
+                  <td colspan="2" class="adminTd" id="3-grafa47t1-35"></td>
+                  <td colspan="14"></td>
+                </tr>
+                </tbody>
+                
+                
+                <tbody class="goodNumber" id="goodNumber4">
+                  <tr>
+                    <td class="td1" colspan="21">31 Грузовые места и описание товаров</td>
+                    <td colspan="5">32 Товар №</td>
+                    <td colspan="14">33 Код товара 
+                      <a href="https://www.consultant.ru/cons/cgi/online.cgi?from=411576-54&req=doc&rnd=fhuoCA&base=LAW&n=405649#K6x5Q2TG6U1B4D1e1" target="_blank" class="grafaClass">
+                        <ion-icon name="information-circle"></ion-icon>
+                       </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="21">
+                      <div class="container">
+                        <div class="classification">
+                          <a href="../pages/classificationOfPacking.html" target="_blank" class="grafaClass">
+                           УПАКОВКА<ion-icon name="information-circle"></ion-icon>
+                          </a>
+                        </div>
+                        <div class="classification">
+                          <a href="https://customs.gov.ru/registers/objects-intellectual-property" target="_blank" class="grafaClass">
+                            ТРОИС<ion-icon name="information-circle"></ion-icon>
+                          </a>
+                        </div>
+                        <div class="classification">
+                          <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=4Pqu02Tbq9HYNuR1&cacheid=2686A8C0D51AC15B38033F9150A5E802&mode=splus&base=LAW&n=409905#4squ02TYSrF1Csp41" target="_blank" class="grafaClass">
+                            ОПИСАНИЕ+<ion-icon name="information-circle"></ion-icon>
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                    <td colspan="2" class="adminTd" id="4-grafa32-1"></td>
+                    <td colspan="3" class="adminTd" id="4-grafa32-2"></td>
+                    <td colspan="5" class="adminTd" id="4-grafa33-1"></td>
+                    <td colspan="1" class="adminTd" id="4-grafa33-2"></td>
+                    <td colspan="1" class="adminTd" id="4-grafa33-3"></td>
+                    <td colspan="1" class="adminTd" id="4-grafa33-4"></td>
+                    <td colspan="1" class="adminTd" id="4-grafa33-5"></td>
+                    <td colspan="1" class="adminTd" id="4-grafa33-6"></td>
+                    <td colspan="3" class="adminTd" id="4-grafa33-7"></td>
+                    <td><a href="../pages/classificationOfDti.html" target="_blank" class="grafaClass">
+                        <ion-icon name="information-circle"></ion-icon>
+                      </a>
+                    </td>          
+                    </tr>
+                  <tr>
+                    <td colspan="26" rowspan="7" class="adminTd" id="4-grafa31"></td>
+                    <td colspan="5">34 Код страны происх.</td>
+                    <td colspan="5">35 Вес брутто (кг)</td>
+                    <td colspan="3">36 Преференция</td>
+                    <td>
+                      <a href="../pages/classificationOfPref.html" target="_blank" class="grafaClass">
+                        <ion-icon name="information-circle"></ion-icon>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="adminTd" id="4-grafa34-1"></td>
+                    <td colspan="2" class="adminTd" id="4-grafa34-2"></td>
+                    <td colspan="5" class="adminTd" id="4-grafa35"></td>
+                    <td colspan="1" class="adminTd" id="4-grafa36-1"></td>
+                    <td colspan="1" class="adminTd" id="4-grafa36-2"></td>
+                    <td colspan="1" class="adminTd" id="4-grafa36-3"></td>
+                    <td colspan="1" class="adminTd" id="4-grafa36-4"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">37 Процедура</td>
+                    <td colspan="6">38 Вес нетто (кг)</td>
+                    <td colspan="3">39 Квота</td>
+                  </tr>
+                  <tr>
+                    <td colspan="3" class="adminTd" id="4-grafa37-1"></td>
+                    <td colspan="2" class="adminTd" id="4-grafa37-2"></td>
+                    <td colspan="3" class="adminTd" id="4-grafa38-1"></td>
+                    <td colspan="3" class="adminTd" id="4-grafa38-2"></td>              
+                    <td colspan="3" class="adminTd" id="4-grafa39"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="14">40 Общая декларация/Предшествующий документ</td>
+                  </tr>
+                  <tr>
+                    <td colspan="14" class="adminTd" id="4-grafa40"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="6">41 Дополнит.единицы</td>
+                    <td colspan="6">42 Цена товара</td>
+                    <td colspan="2">43 Код МОС</td>
+                  </tr>
+                  
+                  <tr>
+                    <td colspan="10">44 Дополнит. информация/ Представл. Документы</td>
+                    <td colspan="5"></td>
+                    <td colspan="5"></td>
+                    <td colspan="4"></td>
+                    <td colspan="2"></td>
+                    <td colspan="6" class="adminTd" id="4-grafa41"></td>
+                    <td colspan="6" class="adminTd" id="4-grafa42"></td>
+                    <td class="adminTd" id="4-grafa43-1"></td>
+                    <td class="adminTd" id="4-grafa43-2"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-1"></td>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-7"></td>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-13"></td>
+                    <td colspan="2">Код ДИ</td>
+                    <td colspan="8">45 Таможенная стоимость
+                      <a href="../pages/classificationOfIncoterms.html" target="_blank" class="grafaClass">
+                        <ion-icon name="information-circle"></ion-icon>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-2"></td>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-8"></td>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-14"></td>
+                    <td colspan="2" class="adminTd" id="4-CodeDI"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa45"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-3"></td>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-9"></td>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-15"></td>
+                    <td colspan="10">46 Статистическая стоимость</td>
+                  </tr>
+                  <tr>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-4"></td>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-10"></td>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-16"></td>
+                    <td colspan="10" class="adminTd" id="4-grafa46"></td>  
+                  </tr>
+                  <tr>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-5"></td>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-11"></td>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-17"></td>
+                    <td colspan="10"></td>  
+                  </tr>
+                  <tr>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-6"></td>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-12"></td>
+                    <td colspan="10" class="adminTd" id="4-grafa44t1-18"></td>
+                    <td colspan="10"></td>
+                  </tr>
+          
+                  <tr>
+                    <td colspan="10">47 Исчисление платежей</td>
+                    <td colspan="5"></td>
+                    <td colspan="5"></td>
+                      <td colspan="6">
+                        <div class="classification">
+                          <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&rnd=fhuoCA&base=LAW&n=380602&cacheid=91EE7F34B05BC0730D198101904AB3CB&mode=rubr#Ra75Q2TaUet7JsxD" target="_blank" class="grafaClass">
+                            ТК<ion-icon name="information-circle"></ion-icon>
+                          </a>
+                          <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=hjT4Q2TusrhNFg7W1&cacheid=34C7E46B2C6BB044D11BD43EE418465C&mode=splus&base=LAW&n=348846#5QZ4Q2TvIDpWFYG3" target="_blank" class="grafaClass">
+                            СБР<ion-icon name="information-circle"></ion-icon>
+                          </a>
+                          <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&ts=UXg4Q2TyVxCwXmp4&cacheid=403FF677C1B08A5ABEB1BB6956E2A5EB&mode=splus&rnd=fhuoCA&base=LAW&n=401724#Qnh4Q2T02vm8gCSt1" target="_blank" class="grafaClass">
+                            ВЫП<ion-icon name="information-circle"></ion-icon>
+                           </a>
+                           <a href="https://www.consultant.ru/cons/cgi/online.cgi?from=411576-54&req=doc&rnd=fhuoCA&base=LAW&n=405649#kFl4Q2T4hfmvtTS8" target="_blank" class="grafaClass">
+                            ВОП<ion-icon name="information-circle"></ion-icon>
+                           </a>
+                           <a href="https://www.consultant.ru/cons/cgi/online.cgi?req=doc&rnd=fhuoCA&base=LAW&n=412738&cacheid=7DA405B11854BBDB7AC3B02398498801&mode=rubr#uVp4Q2TmjK4VDRr9" target="_blank" class="grafaClass">
+                            НАЛ<ion-icon name="information-circle"></ion-icon>
+                           </a>
+                        </div>
+                    </td>
+                    <td colspan="12">48 Отсрочка платежей</td>
+                    <td colspan="2">49 Реквизиты склада</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-1"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-2"></td>
+                    <td colspan="6" class="adminTd" id="4-grafa47t1-3"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-4"></td>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-5"></td>
+                    <td colspan="12" class="adminTd" id="4-grafa48"></td>
+                    <td colspan="4"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-6"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-7"></td>
+                    <td colspan="6" class="adminTd" id="4-grafa47t1-8"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-9"></td>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-10"></td>
+                    <td colspan="7" rowspan="5">
+                      <button type="button" name="addNewGoods" onclick="addingNewGoods ()">
+                        <span class="buttonText">Добавить товар</span>
+                        <span class="buttonIcon"><ion-icon name="add-circle"></ion-icon></span>
+                      </button>
+                    </td>
+                    <td colspan="7" rowspan="5">
+                      <button type="button" name="remNewGoods" onclick="removingNewGoods ()">
+                        <span class="buttonText">Удалить товар</span>
+                        <span class="buttonIcon"><ion-icon name="remove-circle"></ion-icon></span>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-11"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-12"></td>
+                    <td colspan="6" class="adminTd" id="4-grafa47t1-13"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-14"></td>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-15"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-16"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-17"></td>
+                    <td colspan="6" class="adminTd" id="4-grafa47t1-18"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-19"></td>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-20"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-21"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-22"></td>
+                    <td colspan="6" class="adminTd" id="4-grafa47t1-23"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-24"></td>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-25"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-26"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-27"></td>
+                    <td colspan="6" class="adminTd" id="4-grafa47t1-28"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-29"></td>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-30"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-31"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-32"></td>
+                    <td colspan="6" class="adminTd" id="4-grafa47t1-33"></td>
+                    <td colspan="8" class="adminTd" id="4-grafa47t1-34"></td>
+                    <td colspan="2" class="adminTd" id="4-grafa47t1-35"></td>
+                    <td colspan="14"></td>
+                  </tr>
+                  </tbody>
+      </table>
+
+      <label for="" class="copyright">&copy;Разработка: Амандурдыев Х.Д.</label>
+       
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      </form>
+      
+    </body>
+
+    <script src="../scripts/DTuser.js"></script>
+</html>
