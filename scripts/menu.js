@@ -7,6 +7,32 @@ if(localStorage.getItem('loginName')=='АДМИН'){
 }
 document.getElementById('greeting').innerText = "Добрый день, " + localStorage.getItem('loginName') + "!";
 
+var timing={
+    'tst':[1698053400000,'ТЕСТЫ'],
+    'cas':[1698055200000,'ЗАДАЧИ'],
+    'dcl':[1698045600000,'ДЕКЛАРАЦИЯ']
+}
+
+
+
+function check(){
+    
+    time=new Date().getTime()
+    for(i=0;i<Object.keys(timing).length;i++){
+        w=Object.keys(timing)[i]
+        if(time>=timing[w][0]){
+                document.getElementById(w).classList.remove('hideEl')
+                document.getElementById(w).textContent=timing[w][1]
+        }else{
+                timeTxt=new Date(timing[w][0]).toLocaleString().slice(11, 20)
+                document.getElementById(w).classList.add('hideEl')
+                document.getElementById(w).textContent=timing[w][1]+' в '+timeTxt
+     
+        }
+    }
+}
+
+check()
 
 
 function getTransfering () {
@@ -221,3 +247,27 @@ window.addEventListener('load', ()=> {
         document.body.removeChild(document.querySelector('.loader'));
     });
 });
+
+
+// function checkTime(i) {
+//     if (i < 10) {
+//       i = "0" + i;
+//     }
+//     return i;
+//   }
+  
+//from https://stackoverflow.com/questions/18229022/how-to-show-current-time-in-javascript-in-the-format-hhmmss
+//   function startTime() {
+//     var today = new Date();
+//     var h = today.getHours();
+//     var m = today.getMinutes();
+//     var s = today.getSeconds();
+//     // add a zero in front of numbers<10
+//     m = checkTime(m);
+//     s = checkTime(s);
+//     document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+//     t = setTimeout(function() {
+//       startTime()
+//     }, 500);
+//   }
+//   startTime();
