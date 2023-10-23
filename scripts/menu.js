@@ -10,11 +10,11 @@ document.getElementById('greeting').innerText = "Добрый день, " + loca
 var timing={
     'tst':[1698053400000,'ТЕСТЫ'],
     'cas':[1698055200000,'ЗАДАЧИ'],
-    'dcl':[1698045600000,'ДЕКЛАРАЦИЯ']
+    'dcl':[1698033360000,'ДЕКЛАРАЦИЯ']
 }
 
-
-
+//1698033360000 - test
+//1698045600000 - actual
 function check(){
     
     time=new Date().getTime()
