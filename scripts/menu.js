@@ -2,9 +2,10 @@ var url = "https://sheetdb.io/api/v1/d74h4a1vd9319";
 var buttonsToGoToDTuser = document.getElementsByClassName('goToDTuser');
 var refs=[['ТЕСТЫ','TS/testing_'],['ЗАДАЧИ','TS/tasking_'],['ВУЗ','_vuz'],['РЕГ','_reg']]
 
-//if(localStorage.getItem('loginName')=='АДМИН'){
-    //document.getElementById('loadDB').addEventListener('click',()=>{getTransfering ()})
-//}
+// if(localStorage.getItem('loginName')=='АДМИН'){
+//     document.getElementById('loadDB').addEventListener('click',()=>{getTransfering ()})
+// }
+
 
 document.getElementById('loadDB').addEventListener('click',()=>{getTransfering ()})
 document.getElementById('greeting').innerText = "Добрый день, " + localStorage.getItem('loginName') + "!";
@@ -15,8 +16,8 @@ var timing={
     'dcl':[1698045600000,'ДЕКЛАРАЦИЯ']
 }
 
-//1698033360000 - test
-//1698045600000 - actual
+
+
 function check(){
     
     time=new Date().getTime()
@@ -140,24 +141,43 @@ function getTransfering () {
                             let year=ev.split(' ')[2].split(':')[0];
                             let stage=ev.split(' ')[1];
                             let work=ev.split(' ')[3];
-                            for (i=0;i<refs.length;i++){
-                                if (work==refs[i][0]){
-                                    work=refs[i][1]
-                                }
-                                if (stage==refs[i][0]){
-                                    stage=refs[i][1]
-                                }
+                            // for (i=0;i<refs.length;i++){
+                            //     if (work==refs[i][0]){
+                            //         work=refs[i][1]
+                            //     }
+                            //     if (stage==refs[i][0]){
+                            //         stage=refs[i][1]
+                            //     }
+                            // }
+                            if(stage=='ВУЗ'){
+                                stage='vuz'
+                            }else if(stage=='РЕГ'){
+                                stage='reg'
                             }
-                            if (work!='ДЕКЛАРАЦИЯ'){
-                                window.open(`${work}${year}${stage}.html`, '_blank');
+                            localStorage.setItem('evt',stage+year);
+                            if (work=='ТЕСТЫ'){
+                                window.open('TS/test.html', '_blank');
+                            } else if (work=='ЗАДАЧИ'){
+                                window.open(`TS/case${year}${stage}.html`, '_blank');
                             }else{
-                                
                                 if(localStorage.getItem('checked')==1){
                                     window.open('DT/DTadmin.html', '_blank');
                                 }else{
                                     window.open('DT/DTuser.html', '_blank');
                                 }
-                            };
+                            };                             
+                            
+                            
+                            // if (work!='ДЕКЛАРАЦИЯ'){
+                            //     window.open(`${work}${year}${stage}.html`, '_blank');
+                            // }else{
+                                
+                            //     if(localStorage.getItem('checked')==1){
+                            //         window.open('DT/DTadmin.html', '_blank');
+                            //     }else{
+                            //         window.open('DT/DTuser.html', '_blank');
+                            //     }
+                            // };
                           });
                     }; 
                 };
