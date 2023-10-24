@@ -2,9 +2,11 @@ var url = "https://sheetdb.io/api/v1/d74h4a1vd9319";
 var buttonsToGoToDTuser = document.getElementsByClassName('goToDTuser');
 var refs=[['ТЕСТЫ','TS/testing_'],['ЗАДАЧИ','TS/tasking_'],['ВУЗ','_vuz'],['РЕГ','_reg']]
 
-if(localStorage.getItem('loginName')=='АДМИН'){
-    document.getElementById('loadDB').addEventListener('click',()=>{getTransfering ()})
-}
+//if(localStorage.getItem('loginName')=='АДМИН'){
+    //document.getElementById('loadDB').addEventListener('click',()=>{getTransfering ()})
+//}
+
+document.getElementById('loadDB').addEventListener('click',()=>{getTransfering ()})
 document.getElementById('greeting').innerText = "Добрый день, " + localStorage.getItem('loginName') + "!";
 
 var timing={
