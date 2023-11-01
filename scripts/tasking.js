@@ -201,11 +201,11 @@ function checkingTasking() {
           }
         }
         cost += addingCost;
-        element.parentElement.setAttribute('data-tooltip', `${addingCost}`);
+        element.parentElement.setAttribute('data-tooltip', `${addingCost} балл.`);
       } else if (admData != usrData) {
         if (admData != '') {
           cost += addingCost;
-          element.parentElement.setAttribute('data-tooltip', `${admData} (${addingCost})`);
+          element.parentElement.setAttribute('data-tooltip', `${admData} (${addingCost} балл.)`);
 
         } else {
           if (element.type == 'checkbox') { //если ОПИ стоимостью -1
@@ -226,8 +226,8 @@ function checkingTasking() {
         element.style.backgroundColor = mistake;
       }
     };
-    document.getElementById('scorePanel').textContent = `Верно: ${Math.round(score * 10) / 10}/${Math.round(cost * 10) / 10} = ${roundingSecond(score / cost, 2) * 100}%`;
-    document.getElementById('fillPanel').textContent = `Всего: ${filled}/${fields} = ${roundingSecond(filled / fields* 100, 2) }%`;
+    document.getElementById('scorePanel').textContent = `Верно: ${Math.round(score * 10) / 10}/${Math.round(cost * 10) / 10} = ${roundingSecond(score / cost, 2)}%`;
+    document.getElementById('fillPanel').textContent = `Всего: ${filled}/${fields} = ${roundingSecond(filled / fields, 2) }%`;
   };
   getData();
 
@@ -246,10 +246,11 @@ function rounding(numberObject, digit) {
 
 function roundingSecond(numX, digit) {
   if (numX != "") {
-    var numY = ((numX * 100) / 100).toFixed(digit);
+    var numY = ((numX * 100)).toFixed(digit);
     return numY;
   };
 };
+
 
 function removeSpaces(textObject) {
   let x = textObject.value.replace(/\s/g, '');

@@ -527,8 +527,9 @@ function checkingTesting(testing) {
                     qDivMain[c].classList.add('missedParent')
                 }
                 try{
-                    let element=document.getElementById(wrongRadioId)
+                    let element=document.getElementById(wrongRadioId);
                     element.parentElement.classList.add('wrong');
+                    element.parentElement.setAttribute('data-tooltip', `неверный ответ студента`);
                     element.parentElement.parentElement.parentElement.classList.add('wrongParent')
                 }catch{
                     console.log(dataArrayUsr[y][1])
