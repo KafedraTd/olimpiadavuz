@@ -217,6 +217,37 @@ body {
   animation: loading 0.75s ease infinite;
 }
 
+[data-tooltip] {
+  position: relative;
+  cursor: default;
+}
+
+[data-tooltip]::after {
+  position: absolute;
+  width: fit-content;
+  left: calc(50% - var(--tooltipWidth));
+  bottom: 105%;
+  text-align: center;
+  box-sizing: border-box;
+  content: attr(data-tooltip);
+  color: white;
+  background-color: #0f7a65;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 1vw;
+  font-weight: bold;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.2s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.80);
+}
+  
+[data-tooltip]:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 
 @keyframes loading {
   from {
