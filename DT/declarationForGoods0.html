@@ -26,7 +26,7 @@
     <table class="mainTable" id="mainTable">
       <tr>
         <td colspan="6">2 Отправитель/Экспортер</td>
-        <td colspan="4">
+        <td colspan="5">
           <div>
             <span class="buttonText">
               <label>
@@ -40,7 +40,7 @@
           </div>
         </td>
 
-        <td colspan="10">
+        <td colspan="9">
           <div>
             <span class="buttonText">
               <label>
@@ -117,7 +117,7 @@
         </td>
         <td colspan="2">
           <div class="leftQuestion"> <input type="text" tabindex="47" class="grafa2" name="data[grafa2-8]"
-              placeholder="КВ." />
+              placeholder="КВ./ОФ." />
         </td>
         <td colspan="2">
           <div class="number"> <input type="number" tabindex="190" maxlength="3" name="data[grafa3-1]" id="grafa3-1" />
@@ -166,7 +166,7 @@
       </tr>
       <tr>
         <td colspan="6">8 Получатель</td>
-        <td colspan="4">
+        <td colspan="5">
           <div>
             <span class="buttonText">
               <label>
@@ -179,7 +179,7 @@
             </span>
           </div>
         </td>
-        <td colspan="10">
+        <td colspan="9">
           <div>
             <span class="buttonText">
               <label>
@@ -191,8 +191,8 @@
             </span>
           </div>
         </td>
-        <td colspan="6">9 Лицо, ответственное за фин.урег.</td>
-        <td colspan="4">
+        <td colspan="7">9 Лицо, ответственное за фин.урег.</td>
+        <td colspan="5">
           <div>
             <span class="buttonText">
               <label>
@@ -205,7 +205,7 @@
             </span>
           </div>
         </td>
-        <td colspan="10"></td>
+        <td colspan="8"></td>
       </tr>
       <tr>
         <td colspan="20">
@@ -258,7 +258,7 @@
         </td>
         <td colspan="2">
           <div class="leftQuestion"> <input type="text" tabindex="23" class="grafa8" name="data[grafa8-8]"
-              placeholder="КВ." />
+              placeholder="КВ./ОФ." />
         </td>
         <td colspan="14">
           <div class="leftQuestion"><input type="text" tabindex="32" class="grafa9" name="data[grafa9-5]"
@@ -274,7 +274,7 @@
         </td>
         <td colspan="2">
           <div class="leftQuestion"> <input type="text" tabindex="35" class="grafa9" name="data[grafa9-8]"
-              placeholder="КВ." />
+              placeholder="КВ./ОФ." />
         </td>
       </tr>
       <tr>
@@ -328,10 +328,10 @@
               placeholder="Наименование юр.лица или ФИО физ.лица" />
         </td>
         <td colspan="4"></td>
-        <td colspan="3">
+        <td colspan="4">
           <div class="question"> <input type="text" tabindex="52" name="data[grafa11]" list="countryCode" />
         </td>
-        <td colspan="1"></td>
+        <!-- <td colspan="1"></td> -->
         <td colspan="8">
           <div class="number"> <input type="number" name="data[grafa12]" onfocusout="rounding(this, 2)" />
         </td>
@@ -365,7 +365,7 @@
           <div class="leftQuestion"> <input type="text" name="data[grafa14-7]" tabindex="10" placeholder="КОР." />
         </td>
         <td colspan="2">
-          <div class="leftQuestion"> <input type="text" name="data[grafa14-8]" tabindex="11" placeholder="КВ." />
+          <div class="leftQuestion"> <input type="text" name="data[grafa14-8]" tabindex="11" placeholder="КВ./ОФ." />
         </td>
         <td colspan="10">
           <div class="question"> <input type="text" name="data[grafa15-1]" tabindex="53" list="countryName" />
@@ -430,7 +430,7 @@
           <div class="question"> <input type="text" name="data[grafa20-1]" class="disabledInput" />
         </td>
         <td colspan="16">
-          <div class="question"> <input type="text" name="data[grafa20-2]" tabindex="78" list="incotermsCode" />
+          <div class="question"> <input type="text" name="data[grafa20-2]" tabindex="78"/>
         </td>
         <td colspan="2">
           <div class="question"> <input type="text" name="data[grafa20-3]" class="disabledInput" />
@@ -527,7 +527,7 @@
           <div class="leftQuestion"> <input type="text" name="data[grafa30-10]" tabindex="76" placeholder="КОР." />
         </td>
         <td colspan="2" bord="bottom-right">
-          <div class="leftQuestion"> <input type="text" name="data[grafa30-11]" tabindex="77" placeholder="КВ." />
+          <div class="leftQuestion"> <input type="text" name="data[grafa30-11]" tabindex="77" placeholder="КВ./ОФ." />
         </td>
       </tr>
 
@@ -654,8 +654,7 @@
       </tr>
       <tr>
         <td colspan="3">
-          <div class="question"> <input type="text" name="data[grafa37-1]" tabindex="95" maxlength="4"
-              list="procedureCode" />
+          <div class="question"> <input type="text" name="data[grafa37-1]" tabindex="95" maxlength="4"/>
         </td>
         <td colspan="2">
           <div class="question"> <input class="smaller" type="text" name="data[grafa37-2]" tabindex="96"
@@ -854,19 +853,20 @@
         <td colspan="6">
           <div class="classification">
             <a data-nm="customsDoc" target="_blank" class="grafaClass">
-              ТК<ion-icon name="information-circle"></ion-icon>
+              ТК
             </a>
             <a data-nm="feesDoc" target="_blank" class="grafaClass">
-              СБР<ion-icon name="information-circle"></ion-icon>
-            </a>
-            <a data-nm="exdutiesDoc" target="_blank" class="grafaClass">
-              ВЫП<ion-icon name="information-circle"></ion-icon>
+              1010
             </a>
             <a data-nm="imdutiesDoc" target="_blank" class="grafaClass">
-              ВОП<ion-icon name="information-circle"></ion-icon>
+              2010
             </a>
+            <a data-nm="exdutiesDoc" target="_blank" class="grafaClass">
+              3050
+            </a>
+
             <a data-nm="taxesDoc" target="_blank" class="grafaClass">
-              НАЛ<ion-icon name="information-circle"></ion-icon>
+              НК
             </a>
           </div>
         </td>
@@ -1071,7 +1071,7 @@
           </button>
         </td>
         <td colspan="6" rowspan="5"></td>
-
+        <td colspan="14"></td>
       </tr>
       <tr>
         <td colspan="14">
@@ -1357,7 +1357,7 @@
             <div class="question"> <input type="text" name="data[2-grafa34-1]" placeholder="A" list="countryCode" />
           </td>
           <td colspan="2">
-            <div class="question"> <input type="text" name="data[2-grafa34-1]" placeholder="B" />
+            <div class="question"> <input type="text" name="data[2-grafa34-2]" placeholder="B" />
           </td>
           <td colspan="5">
             <div class="number"> <input type="number" name="data[2-grafa35]" onfocusout="rounding(this, 3)" />
@@ -1382,7 +1382,7 @@
         </tr>
         <tr>
           <td colspan="3">
-            <div class="question"> <input type="text" name="data[2-grafa37-1]" list="procedureCode" />
+            <div class="question"> <input type="text" name="data[2-grafa37-1]"/>
           </td>
           <td colspan="2">
             <div class="question"> <input type="text" name="data[2-grafa37-2]" list="crossingCode" />
@@ -1876,7 +1876,7 @@
             <div class="question"> <input type="text" name="data[3-grafa34-1]" placeholder="A" list="countryCode" />
           </td>
           <td colspan="2">
-            <div class="question"> <input type="text" name="data[3-grafa34-1]" placeholder="B" />
+            <div class="question"> <input type="text" name="data[3-grafa34-2]" placeholder="B" />
           </td>
           <td colspan="5">
             <div class="number"> <input type="number" name="data[3-grafa35]" onfocusout="rounding(this, 3)" />
@@ -1901,7 +1901,7 @@
         </tr>
         <tr>
           <td colspan="3">
-            <div class="question"> <input type="text" name="data[3-grafa37-1]" maxlength="4" list="procedureCode" />
+            <div class="question"> <input type="text" name="data[3-grafa37-1]" maxlength="4"/>
           </td>
           <td colspan="2">
             <div class="question"> <input type="text" name="data[3-grafa37-2]" list="crossingCode" />
@@ -2394,7 +2394,7 @@
             <div class="question"> <input type="text" name="data[4-grafa34-1]" placeholder="A" list="countryCode" />
           </td>
           <td colspan="2">
-            <div class="question"> <input type="text" name="data[4-grafa34-1]" placeholder="B" />
+            <div class="question"> <input type="text" name="data[4-grafa34-2]" placeholder="B" />
           </td>
           <td colspan="5">
             <div class="number"> <input type="number" name="data[4-grafa35]" onfocusout="rounding(this, 3)" />
@@ -2419,7 +2419,7 @@
         </tr>
         <tr>
           <td colspan="3">
-            <div class="question"> <input type="text" name="data[4-grafa37-1]" list="procedureCode" />
+            <div class="question"> <input type="text" name="data[4-grafa37-1]"/>
           </td>
           <td colspan="2">
             <div class="question"> <input type="text" name="data[4-grafa37-2]" list="crossingCode" />
@@ -2832,6 +2832,11 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   </form>
+  <!-- <div id="speed-dial-load" class="speed-dial-load">
+    <a href="#popupUpload" class="speed-dial__button speed-dial__button--primary">
+      <ion-icon name="cloud-upload-outline"></ion-icon>
+    </a>
+  </div> -->
 
   <div id="speed-dial-book" class="speed-dial-book">
     <a href="#popup" class="speed-dial__button speed-dial__button--primary">
@@ -2881,7 +2886,6 @@
         <div class="popup__title" id="terms">Условие для заполнения</div>
         <button id="external">Открыть в отдельном окне></button>
         <div class="popup__text">
-
         </div>
       </div>
     </div>
@@ -2901,13 +2905,26 @@
           <a href="#" class="button" type="button" id="submit"><ion-icon name="checkmark-outline"></ion-icon></a>
           <a href="#speed-dial" class="button" type="button"><ion-icon name="close-outline"></ion-icon></a>
         </div>
-
-
-
       </div>
-
     </div>
+  </div>
 
+  <div id="popupUpload" class="popup">
+    <a href="#speed-dial" class="popup__area"></a>
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="#speed-dial" class="popup__close">&#10006</a>
+        <div class="popup__title">Что подгрузить?</div>
+        <div class="alertT">
+          <input type="text" id="inputUpload" list="datalistUpload" />
+          <datalist id="datalistUpload"></datalist>
+        </div>
+        <div class="yesno">
+          <a href="#" class="button" type="button" id="upload"><ion-icon name="checkmark-outline"></ion-icon></a>
+          <a href="#speed-dial" class="button" type="button"><ion-icon name="close-outline"></ion-icon></a>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="../scripts/script.js"></script>
