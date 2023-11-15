@@ -52,6 +52,7 @@ function getTransfering () {
             const data = await response.json();
             const resultsData = data;
             var resultsArray = Array.from(resultsData);
+
             if (greetingName == 'АДМИН') {
                 for (var i = 0; i<resultsArray.length; i++) {
                     var resultsRecord = Object.entries(resultsArray[i]);
@@ -107,12 +108,9 @@ function getTransfering () {
                 };             
             } else {
                 for (var i = 0; i<resultsArray.length; i++) {
-                    
                     var resultsRecord = Object.entries(resultsArray[i]);
-                    
                     var usrName = resultsRecord[0][1];
                     if (usrName == greetingName && usrName != 'АДМИН') {
-                        
                         let line = document.createElement('tr');
                         results.append(line);
                         for (k = 0; k < 5; k++) {
@@ -153,6 +151,8 @@ function getTransfering () {
                                 stage='vuz'
                             }else if(stage=='РЕГ'){
                                 stage='reg'
+                            }else{
+                                stage='custom'
                             }
                             localStorage.setItem('evt',stage+year);
                             if (work=='ТЕСТЫ'){
@@ -160,10 +160,14 @@ function getTransfering () {
                             } else if (work=='ЗАДАЧИ'){
                                 window.open(`TS/case${year}${stage}.html`, '_blank');
                             }else{
-                                if(localStorage.getItem('checked')==1){
-                                    window.open('DT/DTadmin.html', '_blank');
+                                if (stage!='custom'){
+                                    if(localStorage.getItem('checked')==1){
+                                        window.open('DT/DTadmin.html', '_blank');
+                                    }else{
+                                        window.open('DT/DTuser.html', '_blank');
+                                    }
                                 }else{
-                                    window.open('DT/DTuser.html', '_blank');
+                                    window.open('DT/declarationForGoods0.html', '_blank');
                                 }
                             };                             
                             

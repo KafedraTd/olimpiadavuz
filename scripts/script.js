@@ -15,13 +15,45 @@ var refs={
   "exdutiesDoc":"https://www.consultant.ru/cons/cgi/online.cgi?from=433259-0&req=doc&rnd=MCCUw&base=LAW&n=457844#PcCTlqTa6uF6DTYz",
   "imdutiesDoc": "https://www.consultant.ru/cons/cgi/online.cgi?from=438878-80&req=doc&rnd=MCCUw&base=LAW&n=455987#J4VJlqTkJzOtBmel",
   "taxesDoc":"https://www.consultant.ru/cons/cgi/online.cgi?from=438470-0&req=doc&rnd=MCCUw&base=LAW&n=454239#0niTlqT9wTpJkWFX",
-  "trackingDoc":"https://www.consultant.ru/cons/cgi/online.cgi?req=doc&rnd=2tWYzw&base=LAW&n=441402&dst=100009&field=134#34agSYTsarxNNXDC"
+  "trackingDoc":"https://www.consultant.ru/cons/cgi/online.cgi?req=doc&rnd=2tWYzw&base=LAW&n=441402&dst=100009&field=134#34agSYTsarxNNXDC",
+  "prefsDoc":"https://www.consultant.ru/cons/cgi/online.cgi?req=doc&base=LAW&n=402119&dst=21#fn0jhvTosMS52DZ7",
+  "markingDoc":"https://www.consultant.ru/cons/cgi/online.cgi?req=doc&base=LAW&n=448695#JNeihvT0ykPbP5883"
 }
 var itemQty = 1;
-
+var except=['check8kt','CodeDI','2-CodeDI','3-CodeDI','4-CodeDI']
 let allTdTags = document.getElementsByTagName('td');
 
+let currEvent=localStorage.getItem('evtstu')
+      
+function getDeclaration (url) {
+        async function getData() {
+          const response = await fetch(url);
+          const data = await response.json();
+          let dataArray = Array.from(data);
 
+          
+          for (i = 0; i < dataArray.length; i++) {
+              if (dataArray[i].usrName == localStorage.getItem('student') && 
+              dataArray[i].date == localStorage.getItem('dtfill') && 
+              dataArray[i].studEvent == localStorage.getItem('evtstu')) {
+                
+                var dataArrayUsr = Object.entries(dataArray[i]);
+                document.getElementById(dataArrayUsr[0][0]).textContent = dataArrayUsr[0][1];
+                document.getElementById(dataArrayUsr[1][0]).textContent = dataArrayUsr[1][1];
+                document.getElementById(dataArrayUsr[2][0]).textContent = dataArrayUsr[2][1];
+                
+                for (y = 5; y < dataArrayUsr.length; y++) {
+                  if(!except.includes(dataArrayUsr[y][0])){
+                    grafaName="data["+dataArrayUsr[y][0].toString()+"]"
+                    document.getElementsByName(grafaName)[0].value = dataArrayUsr[y][1];
+                  }
+
+          };
+      };
+    };
+};
+getData();
+};
 
 function href(){
   for (var i of Object.keys(refs)){
@@ -349,6 +381,10 @@ function getTransfering() {
   document.getElementById('usrName').value = greetingName;
   document.getElementById('studEvent').value = studEvent;
   formatDate();
+  
+  if(!currEvent.includes('ДЕКЛАРАЦИЯ')){
+    getDeclaration("https://sheetdb.io/api/v1/d74h4a1vd9319")
+  }
 
   const xhr = new XMLHttpRequest();
   const conToAddIn = document.querySelector('.popup__text');
@@ -405,6 +441,25 @@ document.getElementById('submit').addEventListener('click', () => {
   document.getElementById('speed-dial').style.display = 'none';
 
 });
+
+// document.getElementById('upload').addEventListener('click', () => {
+//   document.querySelector('.loader').classList.remove('loader--hidden');
+//   formatDate();
+//   fetch(form.action, {
+//     method: "POST",
+//     body: new FormData(form),
+//   }).then(
+//     response => response.json()
+//   ).then((html) => {
+//     document.querySelector('.loader').classList.add('loader--hidden');
+//     document.body.removeChild(document.querySelector('.loader'));
+//     setTimeout(() => {
+//       alert('Декларация успешно отправлена. Можно закрывать страницу.')
+//     }, 200);
+//   });
+//   document.getElementById('speed-dial').style.display = 'none';
+
+// });
 
 var inputElements = document.querySelectorAll('input');
 var inputArray1 = ['data[grafa2-9]', 'data[grafa8-9]', 'data[grafa9-9]', 'data[grafa14-9]', 'data[grafa54-16]',
