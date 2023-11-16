@@ -398,7 +398,7 @@ function getTransfering() {
   if (level == 'ВУЗ') { level = 'vuz' } else if (level == 'РЕГ') { level = 'reg' };
   let declarationAddress=''
   if(currEvent.includes('ПАРА')){
-    declarationAddress = '../DT/declarationvso' + studEvent.split(':')[1] + '.html';
+    declarationAddress = '../DT/declarationvso' + studEvent.split(':')[1].trim() + '.html';
     let term=document.getElementById('terms')
     term.innerHTML=term.innerHTML+' /'+ studEvent.split(':')[1]
   }else{
