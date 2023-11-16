@@ -160,7 +160,7 @@ function getTransfering () {
                             } else if (work=='ЗАДАЧИ'){
                                 window.open(`TS/case${year}${stage}.html`, '_blank');
                             }else{
-                                if (stage!='custom'){
+                                if (ev.split(' ')[0]!='ПАРА'){
                                     if(localStorage.getItem('checked')==1){
                                         window.open('DT/DTadmin.html', '_blank');
                                     }else{

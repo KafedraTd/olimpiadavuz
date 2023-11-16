@@ -382,7 +382,7 @@ function getTransfering() {
   document.getElementById('studEvent').value = studEvent;
   formatDate();
   
-  if(!currEvent.includes('ДЕКЛАРАЦИЯ')){
+  if(currEvent.includes('ПАРА')){
     getDeclaration("https://sheetdb.io/api/v1/d74h4a1vd9319")
   }
 
@@ -395,10 +395,17 @@ function getTransfering() {
       alert('Условие задачи не загрузилось');
     }
   };
-  if (level == 'ВУЗ') { level = 'vuz' } else { level = 'reg' };
-  let declarationAddress = '../DT/declarationvso' + year + level + '.html';
-  let term=document.getElementById('terms')
-  term.innerHTML=term.innerHTML+' /'+year + level
+  if (level == 'ВУЗ') { level = 'vuz' } else if (level == 'РЕГ') { level = 'reg' };
+  let declarationAddress=''
+  if(currEvent.includes('ПАРА')){
+    declarationAddress = '../DT/declarationvso' + studEvent.split(':')[1] + '.html';
+    let term=document.getElementById('terms')
+    term.innerHTML=term.innerHTML+' /'+ studEvent.split(':')[1]
+  }else{
+    declarationAddress = '../DT/declarationvso' + year + level + '.html';
+    let term=document.getElementById('terms')
+    term.innerHTML=term.innerHTML+' /'+year + level
+  }
   xhr.open('get', declarationAddress);
   xhr.send();
 };
