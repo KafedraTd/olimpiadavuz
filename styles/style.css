@@ -494,7 +494,7 @@ form textarea {
   background-color: var(--inputBackgroundColor, white);
   padding: 1px 1px;
   width: 100%;
-  height: 100%;
+  height: auto;
   color: var(--inputFontColor, #0f7a65);
   font-weight: bold;
   box-sizing: border-box;
@@ -513,6 +513,12 @@ width: 100%;
 border: none;
 
 }
+
+table tr{
+  height: 19px;
+}
+
+
 table td {
   position: relative;
   width: 2.5%;
@@ -521,6 +527,7 @@ table td {
   background-color: var(--tdBackgroundColor, #dcdcdc);
   vertical-align: middle;
 }
+
 
 .disabledInput {
   pointer-events: none;
@@ -611,8 +618,8 @@ h1{
 
 .grafaClass {
   border: none;
-  font-size: 0.5vw;
-  width: 20%;
+  font-size: 12px;
+  width: 50%;
   height: 20%;
   padding: 0;
   border-radius: 50%;
@@ -658,7 +665,7 @@ left: 0;
 .popup__content {
   background-color: #ffffff;
   color: black;
-  max-width: 50%;
+  width: 80%;
   padding: 30px;
   position: relative;
   transition: all 0.5s ease 0s;
@@ -708,6 +715,11 @@ left: 0;
 }
 /*---------------------------------------PopUpButtonsLeft----------------------------------------------*/
 
+.speed-dial-load {
+  position: fixed;
+  bottom: 70vh;
+  right: 15vw;
+}
 
 .speed-dial-book {
   position: fixed;
@@ -910,8 +922,8 @@ left: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  height: 0.5vw;
-  width: 0.5vw;
+  height: 0.8vw;
+  width: 0.8vw;
   -webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
   transition: all 0.15s ease-out 0s;
@@ -934,15 +946,15 @@ left: 0;
 }
 .option-input:checked::before {
   display: inline-block;
-  height: 0.5vw;
-  width: 0.5vw;
+  height: 0.8vw;
+  width: 0.8vw;
   position: absolute;
   left: 0;
   transform: translateY(-25%);
   content: "✖";
   
   /* font-size: 26.6666666667 */
-  font-size: 0.5vw;
+  font-size: 0.8vw;
   text-align: center;
   
 }
