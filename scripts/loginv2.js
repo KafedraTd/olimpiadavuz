@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const formLogin = document.getElementById('login');
     
     var logins=[
+        ['БАЦЕКА ЛАРИСА','БАЦЕКА4'],
         ['БОГАТОВА ЕЛИЗАВЕТА','БОГАТОВА4','БОГАТОВА ЕЛИЗАВЕТА'],
         ['ГОНЧАРОВА ЯНА','ГОНЧАРОВА4'],
         ['ЗАНИБОРЕЦ УЛЬЯНА','ЗАНИБОРЕЦ5'],
